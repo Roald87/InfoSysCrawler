@@ -1,0 +1,211 @@
+[
+  {
+    "Folder": [
+      {
+        "Name": "TC1000 | TwinCAT 3 ADS",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=7539228742464403402&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1000_tc3_ads/9040686731.html?id=4180400188487505339"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1100 | TwinCAT 3 I/O",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=3024784514726988197&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1100_tc3_io/9040955275.html?id=4564530252350791387"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1200 | TwinCAT 3 PLC",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=7017919937148648751&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1200_tc3_plc/9037001611.html?id=3939464723292167005"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1210 | TwinCAT 3 PLC/C++",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=5207380315316286737&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1210_tc3_plc_cpp/9038534027.html?id=9177320573656494754"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1220 | TwinCAT 3 PLC/C++/MATLAB®/Simulink®",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=6999440370683292653&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1220_tc3_plc_cpp_matlab/9038829451.html?id=1052225187286248604"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1250 | TwinCAT 3 PLC/NC PTP 10",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=3486973652872147486&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1250_tc3_plc_ncptp/9039219851.html?id=2267733843222689949"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1260 | TwinCAT 3 PLC/NC PTP 10/NC I",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=8956049689129449201&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1260_tc3_plc_ncptp_nci/9039786123.html?id=6553068759075376957"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1270 | TwinCAT 3 PLC/NC PTP 10/NC I/CNC",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=7063025142286829032&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1270_tc3_plc_ncptp_nci_cnc/9040130443.html?id=2903810873579099625"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1275 | TwinCAT 3 PLC/NC PTP 10/NC I/CNC E",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=3175649201268995180&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1275_tc3_plc_ncptp_nci_cnce/9040388235.html?id=8614840635113164241"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1300 | TwinCAT 3 C++",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=8094495374946613301&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1300_tc3_cpp/8988020491.html?id=7399836081473924056"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "TC1320 | TwinCAT 3 C++/MATLAB®/Simulink®",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=3752122643770446702&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Programming Reference",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tc1320_tc3_cpp_matlab/9040460683.html?id=603947716760023798"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  }
+]
