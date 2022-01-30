@@ -1,0 +1,10 @@
+.config/
+*.md
+bin/
+obj/
+.exercism/
+
+.fake
+.ionide
+aocdl
+playground.ipynb

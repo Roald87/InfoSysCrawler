@@ -1,0 +1,5 @@
+root = true
+
+[*.fs]
+max_line_length=88
+fsharp_max_if_then_else_short_width=80

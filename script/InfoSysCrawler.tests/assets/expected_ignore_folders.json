@@ -1,0 +1,44 @@
+[
+  {
+    "IgnoredFolder": {
+      "Name": "Foreword",
+      "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=1750166990351278914&amp;noHl=1&amp;ancRel=1"
+    }
+  },
+  {
+    "Folder": [
+      {
+        "Name": "Function blocks",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=7265479013924635720&amp;noHl=1&amp;ancRel=1"
+      },
+      []
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "[obsolete functions]",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=7567777352904910201&amp;noHl=1&amp;ancRel=1"
+      },
+      []
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "Data types",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=3621997195465828347&amp;noHl=1&amp;ancRel=1"
+      },
+      []
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "Global Constants",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=765394210537427351&amp;noHl=1&amp;ancRel=1"
+      },
+      []
+    ]
+  }
+]

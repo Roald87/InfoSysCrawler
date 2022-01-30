@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html[]><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="baseid" content="9309844363" /><meta name="releaseid" content="27021607074067339" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><link layout-comment="Pfad-Trafo: concat('../', $source)" rel="stylesheet" href="../../../assets/css/base/01-bootstrap.min.css" /><link layout-comment="Pfad-TRAfo: ctrl:If(@class='MultiLangRoot', $source, concat('../', $source))" rel="stylesheet" href="../../../assets/css/formats.css" /><link layout-comment="Pfad-Trafo: ctrl:If(@class='MultiLangRoot', $source, concat('../', $source))" rel="stylesheet" href="../../../assets/css/formats.css" /><link layout-comment="Pfad-Trfo: ctrl:If(@class='MultiLangRoot', $source, concat('../', $source))" rel="stylesheet" href="../../../assets/css/formats.css" /><title>Supported network controllers</title><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Language" content="en" /><meta name="date" content="637776288000000000" /><meta name="generator" content="onlineInfoSysConverter" /><meta name="Robots" content="index, follow" /><script src="../../../includes/styles.js" type="text/javascript" language="JavaScript"></script><meta name="parent" content="6162419083" /><meta name="level" content="4" /><meta name="description" content="The TwinCAT RT driver is required for a network port if real-time protocols such as EtherCAT are used..." /><meta name="product" content="System requirements" /><meta name="category" content="Product overview" /><meta name="productgroup" content="TwinCAT 3" /><meta name="topicid" content="9309844363" /><meta name="primaryid" content="1489698440745036069" /></head><body id="9309844363" lang="en-US" data-node-id="9309844363" class="" data-culture="en-US"><header class="d-print-none"><ol class="breadcrumb "><li><a href="index.html">TwinCAT 3 | Product overview</a></li><li></li></ol></header><article role="main" aria-labelledby="heading-9309844363"><h1 class="heading" style="color:black;">Supported network controllers</h1><p>The TwinCAT RT driver is required for a network port if real-time protocols such as EtherCAT are used. </p><p>It enables the TwinCAT real-time to access the network chip. </p><p>The driver can be installed using the tool "TcRteInstall.exe", which is provided in <em>C:\TwinCAT\3.1\System</em>.</p><p>On the following page you will find a list of the supported Intel chips. The driver recognizes the chips by the vendor and device ID.</p><p>Support for a network card does not mean that the system is real-time capable. Beckhoff ensures this for its own IPCs and EPCs through a variety of measures. However, this cannot be guaranteed for other devices that use the same network controller.</p><table class="safetytable"><tbody><tr><td class="safety-severity-attention" colspan="2"><p><span class="safety-header-symbol"></span>Note</p></td></tr><tr><td class="safety-content" colspan="2"><p class="safety-cause">Observe Beckhoff compatibility</p><p class="safety-consequence">The NICs installed in Beckhoff controllers are specially selected and qualified for RT use; no properties can be assured on third-party devices. <br />In case of doubt the original Intel driver must be used, which does not allow operation with the TwinCAT runtime with real-time protocols.</p></td></tr></tbody></table><table class="infobox"><tbody><tr><td class="col-safety-pictogram info-symbol"><img src="safety/notice_bk_infosymbol.png" alt="Supported network controllers 1:" /></td><td class="info-content"><p class="safety-consequence">Last updated: TwinCAT 3.1 4024.22</p></td></tr></tbody></table><div class="p"></div><div class="textmodule" id="9309849483"><h2 class="subheading">TcI2xx.INF</h2><table class="table tabletype-header table-fixed"><colgroup><col style="width: 25%;"></col><col style="width: 25%;"></col><col style="width: 50%;"></col></colgroup><thead><tr><th>
+                  <p>Vendor ID</p>
+                </th><th>
+                  <p>Device ID</p>
+                </th><th>
+                  <p>Description</p>
+                </th></tr></thead><tbody><tr><td rowspan="42">
+                  <p>0x8086 (Intel)</p>
+                </td><td>
+                  <p>0x1521</p>
+                </td><td>
+                  <p>Intel I350
+</p>
+                </td></tr><tr><td>
+                  <p>0x1533</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x1534</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x1535</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x1536</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x1537</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x1538</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x157B</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x157C</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x1539</p>
+                </td><td>
+                  <p>Intel I211
+</p>
+                </td></tr><tr><td>
+                  <p>0x1F40</p>
+                </td><td>
+                  <p>Intel I354
+</p>
+                </td></tr><tr><td>
+                  <p>0x1F41</p>
+                </td><td>
+                  <p>Intel I354
+</p>
+                </td></tr><tr><td>
+                  <p>0x1F45</p>
+                </td><td>
+                  <p>Intel I354
+</p>
+                </td></tr><tr><td>
+                  <p>0x156F</p>
+                </td><td>
+                  <p>Intel I219 LM
+</p>
+                </td></tr><tr><td>
+                  <p>0x1570</p>
+                </td><td>
+                  <p>Intel I219 V
+</p>
+                </td></tr><tr><td>
+                  <p>0x15B7</p>
+                </td><td>
+                  <p>Intel I219 LM2
+</p>
+                </td></tr><tr><td>
+                  <p>0x15B8</p>
+                </td><td>
+                  <p>Intel I219 V2
+</p>
+                </td></tr><tr><td>
+                  <p>0x15B9</p>
+                </td><td>
+                  <p>Intel I219 LM3
+</p>
+                </td></tr><tr><td>
+                  <p>0x15D7</p>
+                </td><td>
+                  <p>Intel I219 LM4
+</p>
+                </td></tr><tr><td>
+                  <p>0x15D8</p>
+                </td><td>
+                  <p>Intel I219 V4
+</p>
+                </td></tr><tr><td>
+                  <p>0x15E3</p>
+                </td><td>
+                  <p>Intel I219 LM5
+</p>
+                </td></tr><tr><td>
+                  <p>0x15D6</p>
+                </td><td>
+                  <p>Intel I219 V5
+</p>
+                </td></tr><tr><td>
+                  <p>0x15BD</p>
+                </td><td>
+                  <p>Intel I219 LM6
+</p>
+                </td></tr><tr><td>
+                  <p>0x15BE</p>
+                </td><td>
+                  <p>Intel I219 V6
+</p>
+                </td></tr><tr><td>
+                  <p>0x15BB</p>
+                </td><td>
+                  <p>Intel I219 LM7
+</p>
+                </td></tr><tr><td>
+                  <p>0x15BC</p>
+                </td><td>
+                  <p>Intel I219 V7
+</p>
+                </td></tr><tr><td>
+                  <p>0x15DF</p>
+                </td><td>
+                  <p>Intel I219 LM8
+</p>
+                </td></tr><tr><td>
+                  <p>0x15E0</p>
+                </td><td>
+                  <p>Intel I219 V8
+</p>
+                </td></tr><tr><td>
+                  <p>0x15E1</p>
+                </td><td>
+                  <p>Intel I219 LM9
+</p>
+                </td></tr><tr><td>
+                  <p>0x15E2</p>
+                </td><td>
+                  <p>Intel I219 V9
+</p>
+                </td></tr><tr><td>
+                  <p>0x0D4E</p>
+                </td><td>
+                  <p>Intel I219 LM10
+</p>
+                </td></tr><tr><td>
+                  <p>0x0D4F</p>
+                </td><td>
+                  <p>Intel I219 V10
+</p>
+                </td></tr><tr><td>
+                  <p>0x0D4C</p>
+                </td><td>
+                  <p>Intel I219 LM11
+</p>
+                </td></tr><tr><td>
+                  <p>0x0D4D</p>
+                </td><td>
+                  <p>Intel I219 V11
+</p>
+                </td></tr><tr><td>
+                  <p>0x0D53</p>
+                </td><td>
+                  <p>Intel I219 LM12
+</p>
+                </td></tr><tr><td>
+                  <p>0x0D55</p>
+                </td><td>
+                  <p>Intel I219 V12
+</p>
+                </td></tr><tr><td>
+                  <p>0x15F2</p>
+                </td><td>
+                  <p>Intel I225 LM
+</p>
+                </td></tr><tr><td>
+                  <p>0x15F3</p>
+                </td><td>
+                  <p>Intel I225 V
+</p>
+                </td></tr><tr><td>
+                  <p>0x3100</p>
+                </td><td>
+                  <p>Intel I225 K
+</p>
+                </td></tr><tr><td>
+                  <p>0x15F7</p>
+                </td><td>
+                  <p>Intel I220 V
+</p>
+                </td></tr><tr><td>
+                  <p>0x15F8</p>
+                </td><td>
+                  <p>Intel I225 I
+</p>
+                </td></tr><tr><td>
+                  <p>0x15FD</p>
+                </td><td>
+                  <p>Intel I225 blank/nvm
+</p>
+                </td></tr></tbody></table><h2 class="subheading">TcI8254x.inf</h2><table class="table tabletype-header table-fixed"><colgroup><col style="width: 25%;"></col><col style="width: 25%;"></col><col style="width: 50%;"></col></colgroup><thead><tr><th>
+                  <p>Vendor ID</p>
+                </th><th>
+                  <p>Device ID</p>
+                </th><th>
+                  <p>Description</p>
+                </th></tr></thead><tbody><tr><td rowspan="87">
+                  <p>0x8086 (Intel)</p>
+                </td><td>
+                  <p>0x1000</p>
+                </td><td>
+                  <p>Intel 82542
+</p>
+                </td></tr><tr><td>
+                  <p>0x1001</p>
+                </td><td>
+                  <p>Intel 82543GC
+</p>
+                </td></tr><tr><td>
+                  <p>0x1004</p>
+                </td><td>
+                  <p>Intel 82543GC
+</p>
+                </td></tr><tr><td>
+                  <p>0x1008</p>
+                </td><td>
+                  <p>Intel 82544EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x1009</p>
+                </td><td>
+                  <p>Intel 82544EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x100C</p>
+                </td><td>
+                  <p>Intel 82543EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x100D</p>
+                </td><td>
+                  <p>Intel 82544GC
+</p>
+                </td></tr><tr><td>
+                  <p>0x100E</p>
+                </td><td>
+                  <p>Intel 82540EM
+</p>
+                </td></tr><tr><td>
+                  <p>0x100F</p>
+                </td><td>
+                  <p>Intel 82545EM
+</p>
+                </td></tr><tr><td>
+                  <p>0x1010</p>
+                </td><td>
+                  <p>Intel 82546EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x1011</p>
+                </td><td>
+                  <p>Intel 82545EM
+</p>
+                </td></tr><tr><td>
+                  <p>0x1012</p>
+                </td><td>
+                  <p>Intel 82546EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x1013</p>
+                </td><td>
+                  <p>Intel 82541EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x1014</p>
+                </td><td>
+                  <p>Intel 82541ER
+</p>
+                </td></tr><tr><td>
+                  <p>0x1015</p>
+                </td><td>
+                  <p>Intel 82540EM
+</p>
+                </td></tr><tr><td>
+                  <p>0x1016</p>
+                </td><td>
+                  <p>Intel 82540EP
+</p>
+                </td></tr><tr><td>
+                  <p>0x1017</p>
+                </td><td>
+                  <p>Intel 82540EP
+</p>
+                </td></tr><tr><td>
+                  <p>0x1018</p>
+                </td><td>
+                  <p>Intel 82541EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x1019</p>
+                </td><td>
+                  <p>Intel 82547EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x101A</p>
+                </td><td>
+                  <p>Intel 82547EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x101D</p>
+                </td><td>
+                  <p>Intel 82546EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x101E</p>
+                </td><td>
+                  <p>Intel 82540EP
+</p>
+                </td></tr><tr><td>
+                  <p>0x1026</p>
+                </td><td>
+                  <p>Intel 82545GM
+</p>
+                </td></tr><tr><td>
+                  <p>0x1027</p>
+                </td><td>
+                  <p>Intel 82545GM
+</p>
+                </td></tr><tr><td>
+                  <p>0x1028</p>
+                </td><td>
+                  <p>Intel 82545GM
+</p>
+                </td></tr><tr><td>
+                  <p>0x1049</p>
+                </td><td>
+                  <p>Intel 82566MM	- ICH8
+</p>
+                </td></tr><tr><td>
+                  <p>0x104A</p>
+                </td><td>
+                  <p>Intel 82566DM	- ICH8
+</p>
+                </td></tr><tr><td>
+                  <p>0x104B</p>
+                </td><td>
+                  <p>Intel 82566DC - ICH8
+</p>
+                </td></tr><tr><td>
+                  <p>0x104C</p>
+                </td><td>
+                  <p>Intel 82562V - ICH8
+</p>
+                </td></tr><tr><td>
+                  <p>0x104D</p>
+                </td><td>
+                  <p>Intel 82566MC - ICH8
+</p>
+                </td></tr><tr><td>
+                  <p>0x105E</p>
+                </td><td>
+                  <p>Intel 82571EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x105F</p>
+                </td><td>
+                  <p>Intel 82571EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x1060</p>
+                </td><td>
+                  <p>Intel 82571EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x1075</p>
+                </td><td>
+                  <p>Intel 82547EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x1076</p>
+                </td><td>
+                  <p>Intel 82541GI
+</p>
+                </td></tr><tr><td>
+                  <p>0x1077</p>
+                </td><td>
+                  <p>Intel 82547EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x1078</p>
+                </td><td>
+                  <p>Intel 82541ER
+</p>
+                </td></tr><tr><td>
+                  <p>0x1079</p>
+                </td><td>
+                  <p>Intel 82546EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x107A</p>
+                </td><td>
+                  <p>Intel 82546EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x107B</p>
+                </td><td>
+                  <p>Intel 82546EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x107C</p>
+                </td><td>
+                  <p>Intel 82541PI
+</p>
+                </td></tr><tr><td>
+                  <p>0x107D</p>
+                </td><td>
+                  <p>Intel 82572EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x107E</p>
+                </td><td>
+                  <p>Intel 82572EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x107F</p>
+                </td><td>
+                  <p>Intel 82572EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x108A</p>
+                </td><td>
+                  <p>Intel 82546GB
+</p>
+                </td></tr><tr><td>
+                  <p>0x108B</p>
+                </td><td>
+                  <p>Intel 82573E
+</p>
+                </td></tr><tr><td>
+                  <p>0x108C</p>
+                </td><td>
+                  <p>Intel 82573E
+</p>
+                </td></tr><tr><td>
+                  <p>0x1096</p>
+                </td><td>
+                  <p>Intel 80003ES2LAN
+</p>
+                </td></tr><tr><td>
+                  <p>0x1098</p>
+                </td><td>
+                  <p>Intel 80003ES2LAN
+</p>
+                </td></tr><tr><td>
+                  <p>0x1099</p>
+                </td><td>
+                  <p>Intel 82546GB
+</p>
+                </td></tr><tr><td>
+                  <p>0x109A</p>
+                </td><td>
+                  <p>Intel 82573L
+</p>
+                </td></tr><tr><td>
+                  <p>0x10A4</p>
+                </td><td>
+                  <p>Intel 82571EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x10A7</p>
+                </td><td>
+                  <p>Intel 82575
+</p>
+                </td></tr><tr><td>
+                  <p>0x10A9</p>
+                </td><td>
+                  <p>Intel 82575 (serdes)
+</p>
+                </td></tr><tr><td>
+                  <p>0x10B5</p>
+                </td><td>
+                  <p>Intel 82546GB
+</p>
+                </td></tr><tr><td>
+                  <p>0x10B9</p>
+                </td><td>
+                  <p>Intel 82572EI
+</p>
+                </td></tr><tr><td>
+                  <p>0x10BA</p>
+                </td><td>
+                  <p>Intel 80003ES2LAN
+</p>
+                </td></tr><tr><td>
+                  <p>0x10BB</p>
+                </td><td>
+                  <p>Intel 80003ES2LAN
+</p>
+                </td></tr><tr><td>
+                  <p>0x10BC</p>
+                </td><td>
+                  <p>Intel 82571EB
+</p>
+                </td></tr><tr><td>
+                  <p>0x10BD</p>
+                </td><td>
+                  <p>Intel 82566DM	- ICH9
+</p>
+                </td></tr><tr><td>
+                  <p>0x10C4</p>
+                </td><td>
+                  <p>Intel 82562GT - ICH8
+</p>
+                </td></tr><tr><td>
+                  <p>0x10C5</p>
+                </td><td>
+                  <p>Intel 82562G - ICH8
+</p>
+                </td></tr><tr><td>
+                  <p>0x10C9</p>
+                </td><td>
+                  <p>Intel 82576
+</p>
+                </td></tr><tr><td>
+                  <p>0x10D3</p>
+                </td><td>
+                  <p>Intel 82574L
+</p>
+                </td></tr><tr><td>
+                  <p>0x10A9</p>
+                </td><td>
+                  <p>Intel 82575 (quad copper)
+</p>
+                </td></tr><tr><td>
+                  <p>0x10CB</p>
+                </td><td>
+                  <p>Intel 82567V - ICH9
+</p>
+                </td></tr><tr><td>
+                  <p>0x10E5</p>
+                </td><td>
+                  <p>Intel 82567LM-4 - ICH9
+</p>
+                </td></tr><tr><td>
+                  <p>0x10EA</p>
+                </td><td>
+                  <p>Intel 82577LM
+</p>
+                </td></tr><tr><td>
+                  <p>0x10EB</p>
+                </td><td>
+                  <p>Intel 82577LC
+</p>
+                </td></tr><tr><td>
+                  <p>0x10EF</p>
+                </td><td>
+                  <p>Intel 82578DM
+</p>
+                </td></tr><tr><td>
+                  <p>0x10F0</p>
+                </td><td>
+                  <p>Intel 82578DC
+</p>
+                </td></tr><tr><td>
+                  <p>0x10F5</p>
+                </td><td>
+                  <p>Intel 82567LM - ICH9(e.g. Dell E6400 Notebook)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1502</p>
+                </td><td>
+                  <p>Intel 82579LM
+</p>
+                </td></tr><tr><td>
+                  <p>0x1503</p>
+                </td><td>
+                  <p>Intel 82579V
+</p>
+                </td></tr><tr><td>
+                  <p>0x150A</p>
+                </td><td>
+                  <p>Intel 82576NS
+</p>
+                </td></tr><tr><td>
+                  <p>0x150E</p>
+                </td><td>
+                  <p>Intel 82580
+</p>
+                </td></tr><tr><td>
+                  <p>0x1521</p>
+                </td><td>
+                  <p>Intel I350
+</p>
+                </td></tr><tr><td>
+                  <p>0x1533</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x157B</p>
+                </td><td>
+                  <p>Intel I210
+</p>
+                </td></tr><tr><td>
+                  <p>0x153A</p>
+                </td><td>
+                  <p>Intel I217 LM
+</p>
+                </td></tr><tr><td>
+                  <p>0x153B</p>
+                </td><td>
+                  <p>Intel I217 VA
+</p>
+                </td></tr><tr><td>
+                  <p>0x1559</p>
+                </td><td>
+                  <p>Intel I218 V
+</p>
+                </td></tr><tr><td>
+                  <p>0x155A</p>
+                </td><td>
+                  <p>Intel I218 LM
+</p>
+                </td></tr><tr><td>
+                  <p>0x15A0</p>
+                </td><td>
+                  <p>Intel I218 LM2
+</p>
+                </td></tr><tr><td>
+                  <p>0x15A1</p>
+                </td><td>
+                  <p>Intel I218 V
+</p>
+                </td></tr><tr><td>
+                  <p>0x15A2</p>
+                </td><td>
+                  <p>Intel I218 LM3
+</p>
+                </td></tr><tr><td>
+                  <p>0x15A3</p>
+                </td><td>
+                  <p>Intel I218 V3
+</p>
+                </td></tr></tbody></table><h2 class="subheading">TcI8255x.inf</h2><table class="table tabletype-header table-fixed"><colgroup><col style="width: 25%;"></col><col style="width: 25%;"></col><col style="width: 50%;"></col></colgroup><thead><tr><th>
+                  <p>Vendor ID</p>
+                </th><th>
+                  <p>Device ID</p>
+                </th><th>
+                  <p>Description</p>
+                </th></tr></thead><tbody><tr><td rowspan="37">
+                  <p>0x8086 (Intel)</p>
+                </td><td>
+                  <p>0x1029</p>
+                </td><td>
+                  <p>Intel 82559
+</p>
+                </td></tr><tr><td>
+                  <p>0x1030</p>
+                </td><td>
+                  <p>Intel 82559
+</p>
+                </td></tr><tr><td>
+                  <p>0x1031</p>
+                </td><td>
+                  <p>82801CAM (PRO/100 VE Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1032</p>
+                </td><td>
+                  <p>82801CAM (PRO/100 VE Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1033</p>
+                </td><td>
+                  <p>82801CAM (PRO/100 VM Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1034</p>
+                </td><td>
+                  <p>82801CAM (PRO/100 VM Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1038</p>
+                </td><td>
+                  <p>Intel PRO/100 VM/KM Network Connection
+</p>
+                </td></tr><tr><td>
+                  <p>0x1039</p>
+                </td><td>
+                  <p>Intel 82801CAM (PRO/100 VM Network Connection) ICH2
+</p>
+                </td></tr><tr><td>
+                  <p>0x103A</p>
+                </td><td>
+                  <p>Intel 82801DB (LAN Controller with 82562ET/EZ (CNR) PHY) ICH4
+</p>
+                </td></tr><tr><td>
+                  <p>0x103B</p>
+                </td><td>
+                  <p>Intel 82801DB (LAN Controller with 82562EM/EX PHY)
+</p>
+                </td></tr><tr><td>
+                  <p>0x103C</p>
+                </td><td>
+                  <p>Intel 82801DB (LAN Controller with 82562EM/EX (CNR) PHY)
+</p>
+                </td></tr><tr><td>
+                  <p>0x103D</p>
+                </td><td>
+                  <p>Intel 82801DB (PRO/100 VE Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x103E</p>
+                </td><td>
+                  <p>Intel 82801DB (PRO/100 VM Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1050</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VE Network Connection) ICH5
+</p>
+                </td></tr><tr><td>
+                  <p>0x1051</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VE Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1052</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VM Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1053</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VM Network Connection)
+</p>
+                </td></tr><tr><td>
+                  <p>0x1054</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VE Network Connection (mobile))
+</p>
+                </td></tr><tr><td>
+                  <p>0x1055</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+</p>
+                </td></tr><tr><td>
+                  <p>0x1056</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+</p>
+                </td></tr><tr><td>
+                  <p>0x1057</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+</p>
+                </td></tr><tr><td>
+                  <p>0x1059</p>
+                </td><td>
+                  <p>Intel 82551QM PRO/100 M
+</p>
+                </td></tr><tr><td>
+                  <p>0x1064</p>
+                </td><td>
+                  <p>Intel 82801EB/ER (PRO/100 VE Network Connection) ICH6
+</p>
+                </td></tr><tr><td>
+                  <p>0x1065</p>
+                </td><td>
+                  <p>Intel 82801FB/FR/FW/FRW
+</p>
+                </td></tr><tr><td>
+                  <p>0x1067</p>
+                </td><td>
+                  <p>Intel(R) PRO/100 VE Network Connection
+</p>
+                </td></tr><tr><td>
+                  <p>0x1068</p>
+                </td><td>
+                  <p>Intel(R) PRO/100 VE Network Connection
+</p>
+                </td></tr><tr><td>
+                  <p>0x1069</p>
+                </td><td>
+                  <p>Intel(R) PRO/100 VE Network Connection
+</p>
+                </td></tr><tr><td>
+                  <p>0x106A</p>
+                </td><td>
+                  <p>Intel(R) PRO/100 VE Network Connection
+</p>
+                </td></tr><tr><td>
+                  <p>0x106B</p>
+                </td><td>
+                  <p>Intel(R) PRO/100 VE Network Connection
+</p>
+                </td></tr><tr><td>
+                  <p>0x1092</p>
+                </td><td>
+                  <p class="text-left"> </p>
+                </td></tr><tr><td>
+                  <p>0x1094</p>
+                </td><td>
+                  <p class="text-left"> </p>
+                </td></tr><tr><td>
+                  <p>0x1209</p>
+                </td><td>
+                  <p>Intel 82551ER/IT
+</p>
+                </td></tr><tr><td>
+                  <p>0x1229</p>
+                </td><td>
+                  <p>Intel 82557/8/9/0/1 (EtherExpress PRO/100(B) Adapter)
+</p>
+                </td></tr><tr><td>
+                  <p>0x2449</p>
+                </td><td>
+                  <p>82801CAM i815 Boser (ICH2)
+</p>
+                </td></tr><tr><td>
+                  <p>0x2459</p>
+                </td><td>
+                  <p>Intel(R) PRO/100 VE Network Connection
+</p>
+                </td></tr><tr><td>
+                  <p>0x245D</p>
+                </td><td>
+                  <p>Intel(R) PRO/100 VE Network Connection
+</p>
+                </td></tr><tr><td>
+                  <p>0x27DC</p>
+                </td><td>
+                  <p>Intel(R) PRO/100 VE Network Connection</p>
+                </td></tr></tbody></table><h2 class="subheading">TcIXgbe.INF</h2><table class="table tabletype-header table-fixed"><colgroup><col style="width: 25%;"></col><col style="width: 25%;"></col><col style="width: 50%;"></col></colgroup><thead><tr><th>
+                  <p>Vendor ID</p>
+                </th><th>
+                  <p>Device ID</p>
+                </th><th>
+                  <p>Description</p>
+                </th></tr></thead><tbody><tr><td rowspan="31">
+                  <p>0x8086 (Intel)</p>
+                </td><td>
+                  <p>0x1528</p>
+                </td><td>
+                  <p>Intel X540-AT2 ( X540-T1/X540-T2 )
+</p>
+                </td></tr><tr><td>
+                  <p>0x1515</p>
+                </td><td>
+                  <p>Intel X540_VF
+</p>
+                </td></tr><tr><td>
+                  <p>0x1530</p>
+                </td><td>
+                  <p>Intel X540_VF_HV
+</p>
+                </td></tr><tr><td>
+                  <p>0x155C</p>
+                </td><td>
+                  <p>Intel X540_VF_BYPASS
+</p>
+                </td></tr><tr><td>
+                  <p>0x1560</p>
+                </td><td>
+                  <p>Intel X540T1
+</p>
+                </td></tr><tr><td>
+                  <p>0x1563</p>
+                </td><td>
+                  <p>Intel X550T
+</p>
+                </td></tr><tr><td>
+                  <p>0x15D1</p>
+                </td><td>
+                  <p>Intel X550T1
+</p>
+                </td></tr><tr><td>
+                  <p>0x15C2</p>
+                </td><td>
+                  <p>Intel X550EM_A_KR
+</p>
+                </td></tr><tr><td>
+                  <p>0x15C3</p>
+                </td><td>
+                  <p>Intel X550EM_A_KR_L
+</p>
+                </td></tr><tr><td>
+                  <p>0x15C4</p>
+                </td><td>
+                  <p>Intel X550EM_A_SFP_N
+</p>
+                </td></tr><tr><td>
+                  <p>0x15C6</p>
+                </td><td>
+                  <p>Intel X550EM_A_SGMII
+</p>
+                </td></tr><tr><td>
+                  <p>0x15C7</p>
+                </td><td>
+                  <p>Intel X550EM_A_SGMII_L
+</p>
+                </td></tr><tr><td>
+                  <p>0x15C8</p>
+                </td><td>
+                  <p>Intel X550EM_A_10G_T
+</p>
+                </td></tr><tr><td>
+                  <p>0x15CA</p>
+                </td><td>
+                  <p>Intel X550EM_A_QSFP
+</p>
+                </td></tr><tr><td>
+                  <p>0x15CC</p>
+                </td><td>
+                  <p>Intel X550EM_A_QSFP_N
+</p>
+                </td></tr><tr><td>
+                  <p>0x15CE</p>
+                </td><td>
+                  <p>Intel X550EM_A_SFP
+</p>
+                </td></tr><tr><td>
+                  <p>0x15E4</p>
+                </td><td>
+                  <p>Intel X550EM_A_10G_T
+</p>
+                </td></tr><tr><td>
+                  <p>0x15E5</p>
+                </td><td>
+                  <p>Intel X550EM_A_1G_T
+</p>
+                </td></tr><tr><td>
+                  <p>0x15AA</p>
+                </td><td>
+                  <p>Intel X550EM_X_KX4
+</p>
+                </td></tr><tr><td>
+                  <p>0x15AB</p>
+                </td><td>
+                  <p>Intel X550EM_X_KR
+</p>
+                </td></tr><tr><td>
+                  <p>0x15AC</p>
+                </td><td>
+                  <p>Intel X550EM_X_SFP
+</p>
+                </td></tr><tr><td>
+                  <p>0x15AD</p>
+                </td><td>
+                  <p>Intel X550EM_X_10_G_T
+</p>
+                </td></tr><tr><td>
+                  <p>0x15AE</p>
+                </td><td>
+                  <p>Intel X550EM_X_1_G_T
+</p>
+                </td></tr><tr><td>
+                  <p>0x15B0</p>
+                </td><td>
+                  <p>Intel X550EM_X_XFI
+</p>
+                </td></tr><tr><td>
+                  <p>0x1564</p>
+                </td><td>
+                  <p>Intel X550_VF_HV
+</p>
+                </td></tr><tr><td>
+                  <p>0x1565</p>
+                </td><td>
+                  <p>Intel X550_VF
+</p>
+                </td></tr><tr><td>
+                  <p>0x15C5</p>
+                </td><td>
+                  <p>Intel X550EM_A_VF
+</p>
+                </td></tr><tr><td>
+                  <p>0x15B4</p>
+                </td><td>
+                  <p>Intel X550EM_A_VF_HF
+</p>
+                </td></tr><tr><td>
+                  <p>0x15A8</p>
+                </td><td>
+                  <p>Intel X550EM_X_VF
+</p>
+                </td></tr><tr><td>
+                  <p>0x15A9</p>
+                </td><td>
+                  <p>Intel X550EM_X_VF_HV
+</p>
+                </td></tr><tr><td>
+                  <p class="text-left"> </p>
+                </td><td>
+                  <p class="text-left"> </p>
+                </td></tr></tbody></table></div></article><footer><p class="text-muted">© 2022 Beckhoff Automation</p></footer><script src="../../../../assets/js/00-jquery.min.js"></script><script src="../../../../assets/js/01-bootstrap.min.js"></script></body></html>

@@ -1,0 +1,171 @@
+[
+  {
+    "IgnoredFolder": {
+      "Name": "Foreword",
+      "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=1750166990351278914&amp;noHl=1&amp;ancRel=1"
+    }
+  },
+  {
+    "Folder": [
+      {
+        "Name": "Function blocks",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=7265479013924635720&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "ReadWriteTerminalReg",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42591243.html?id=7275193739490913707"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "CouplerReset",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42592779.html?id=8709580392896105157"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "FB_ReadCouplerDiag",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42594315.html?id=3826489383443943666"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "FB_ReadCouplerRegs",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42595851.html?id=8090904770520786892"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "FB_WriteCouplerRegs",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42597387.html?id=116904641330114048"
+            },
+            "3.1.0"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "[obsolete functions]",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=7567777352904910201&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "F_GetVersionTcPlcCoupler",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42600331.html?id=6362065393329470331"
+            },
+            "3.1.0"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "Data types",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=3621997195465828347&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "PLCINTFSTRUCT",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42603275.html?id=7566696171309827053"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "E_CouplerErrType",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42604811.html?id=6845569431481975811"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "ST_CouplerDiag",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42606347.html?id=1994330772861109512"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "ST_CouplerReg",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42607883.html?id=7058535891579847280"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "ST_CouplerTable",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42609419.html?id=5482306675259183856"
+            },
+            "3.1.0"
+          ]
+        },
+        {
+          "Page": [
+            {
+              "Name": "ST_FlashCode",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42610955.html?id=2941218891386618606"
+            },
+            "3.1.0"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "Folder": [
+      {
+        "Name": "Global Constants",
+        "Url": "https://infosys.beckhoff.com/english/menu/menu.php?id=765394210537427351&amp;noHl=1&amp;ancRel=1"
+      },
+      [
+        {
+          "Page": [
+            {
+              "Name": "Library version",
+              "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42613899.html?id=3628013594270036094"
+            },
+            null
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "IgnoredPage": {
+      "Name": "Overview",
+      "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42582795.html?id=7734414512993082394"
+    }
+  }
+]
