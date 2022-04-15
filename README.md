@@ -57,7 +57,7 @@ The version numbers are used for the [unofficial TwinCAT changelog](https://tcch
 
 ## Current dumps
 
-In `data/` you will find a few folders which are crawled and saved as a json file. Currently the following folders were crawled where the folders "Foreword", "Installation" and "Samples" and the pages "Overview" and "Search" are ignored. On ignored pages/folders the crawler doesn't try to find a TwinCAT version number. Data was obtained on 30 January 2022.
+In `data/` you will find a few folders which are crawled and saved as a json file. Currently the following folders were crawled where the folders "Foreword", "Installation" and "Samples" and the pages "Overview" and "Search" are ignored. On ignored pages/folders the crawler doesn't try to find a TwinCAT version number. Data was last updated on 15 April 2022.
 
 - `data/plc_libraries.json`: TwinCAT 3/TE1000 XAE/PLC/PLC Libraries
 - `data/texxxx.json`: TwinCAT 3/TExxxx | TwinCAT 3 Engineering 

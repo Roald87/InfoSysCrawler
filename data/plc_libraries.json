@@ -21754,6 +21754,24 @@
                         },
                         "3.1.4020"
                       ]
+                    },
+                    {
+                      "Page": [
+                        {
+                          "Name": "RealIsFinite",
+                          "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11506278283.html?id=1461230831771457831"
+                        },
+                        "3.1.4024.24"
+                      ]
+                    },
+                    {
+                      "Page": [
+                        {
+                          "Name": "RealIsNaN",
+                          "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11506311563.html?id=242917297032427132"
+                        },
+                        "3.1.4024.24"
+                      ]
                     }
                   ]
                 ]
@@ -22912,6 +22930,15 @@
               {
                 "Page": [
                   {
+                    "Name": "BIC_TO_BTN",
+                    "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11533405835.html?id=6235487508727721983"
+                  },
+                  "3.1.0"
+                ]
+              },
+              {
+                "Page": [
+                  {
                     "Name": "BYTE_TO_BINSTR",
                     "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/934054283.html?id=2355405401787121303"
                   },
@@ -23121,6 +23148,15 @@
                   {
                     "Name": "F_RTrim",
                     "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/35128331.html?id=2288903806933995037"
+                  },
+                  "3.1.0"
+                ]
+              },
+              {
+                "Page": [
+                  {
+                    "Name": "F_SplitBIC",
+                    "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11533409675.html?id=3721099008892829866"
                   },
                   "3.1.0"
                 ]
@@ -23779,6 +23815,15 @@
                   {
                     "Name": "ST_LicenseDongle",
                     "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/4402362891.html?id=3993571524477722897"
+                  },
+                  null
+                ]
+              },
+              {
+                "Page": [
+                  {
+                    "Name": "ST_SplittedBIC",
+                    "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11533518475.html?id=8209284374371137313"
                   },
                   null
                 ]
@@ -28580,7 +28625,7 @@
                     {
                       "Page": [
                         {
-                          "Name": "PLC HMI",
+                          "Name": "PLC Commissioning Tool",
                           "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dali/5967742731.html?id=7748175508814972832"
                         },
                         null
@@ -28619,6 +28664,24 @@
               {
                 "Page": [
                   {
+                    "Name": "Use of properties",
+                    "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dali/11303915787.html?id=6858485794211204167"
+                  },
+                  null
+                ]
+              },
+              {
+                "Page": [
+                  {
+                    "Name": "Transfer of the reference to the communication block",
+                    "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dali/11303720075.html?id=3277032211189169850"
+                  },
+                  null
+                ]
+              },
+              {
+                "Page": [
+                  {
                     "Name": "Tc2_DALI and Tc3_DALI in the same project",
                     "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dali/9843721099.html?id=7235218346770638304"
                   },
@@ -28630,6 +28693,15 @@
                   {
                     "Name": "Creating an application function block",
                     "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dali/9869836171.html?id=8098754362125251058"
+                  },
+                  null
+                ]
+              },
+              {
+                "Page": [
+                  {
+                    "Name": "Creating a device function block",
+                    "Url": "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dali/11308293643.html?id=7267132497153850121"
                   },
                   null
                 ]
