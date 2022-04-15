@@ -6,6 +6,7 @@
   <ItemGroup>
     <Compile Include="Sitemap.fs" />
     <Compile Include="Request.fs" />
+    <Compile Include="Analyses.fs" />
     <Reference Include="FSharp.Json">
       <HintPath>FSharp.Json.dll</HintPath>
     </Reference>
