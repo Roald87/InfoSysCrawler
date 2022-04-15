@@ -2,7 +2,8 @@
 bin/
 obj/
 .exercism/
-
 .fake
 .ionide
+
 playground.ipynb
+.ipynb_checkpoints/
