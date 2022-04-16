@@ -7,6 +7,7 @@ open Xunit
 
 open InfoSysCrawler.SiteMap
 open InfoSysCrawler.Request
+open InfoSysCrawler.Analyses
 
 [<Fact>]
 let ``Find a single folder`` () =
@@ -237,5 +238,21 @@ let ``crawl menu ignore Overview page`` () =
         File.ReadAllText("../../../assets/input_ignore_folders_pages.html")
         |> findPagesOfDepth 6
         |> filterIgnoredPages [ "Overview" ]
+
+    actual |> should equal expected
+
+[<Fact>]
+let ``convert page to markdown link`` () =
+    let expected =
+        "[`Tc3_IPCDiag.FB_IPCDiag_Register`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_ipcdiag/1475282443.html?id=3808476523660178266)"
+
+    let p =
+        { Name = "FB_IPCDiag_Register"
+          Url =
+            (Url
+                "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_ipcdiag/1475282443.html?id=3808476523660178266")
+          TwinCatVersion = "3.1.4024.7" }
+
+    let actual = toMarkDownLink p
 
     actual |> should equal expected
