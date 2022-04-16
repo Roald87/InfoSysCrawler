@@ -43,7 +43,8 @@ module Analyses =
                   Url = (Url "")
                   TwinCatVersion = "" })
         |> List.groupBy (fun page -> page.TwinCatVersion)
-        
+        |> List.sortByDescending fst
+
     let getLibraryName (url: Url) =
         let (Url u) = url
         let m = Regex.Match(u, @"tcplclib_(.*)/")
