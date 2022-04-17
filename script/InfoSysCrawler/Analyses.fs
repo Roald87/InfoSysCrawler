@@ -48,47 +48,49 @@ module Analyses =
     let getLibraryName (url: Url) =
         let (Url u) = url
         let m = Regex.Match(u, @"tcplclib_(.*)/")
-    
-        let libraryNames = [
-            "Tc2_Coupler"
-            "Tc2_DALI"
-            "Tc2_DataExchange"
-            "Tc2_DMX"
-            "Tc2_EIB"
-            "Tc2_EnOcean"
-            "Tc2_EtherCAT"
-            "Tc2_GENIbus"
-            "Tc2_IoFunctions"
-            "Tc2_LON"
-            "Tc2_Math"
-            "Tc2_MBus"
-            "Tc2_MDP"
-            "Tc3_MPBus"
-            "Tc2_SMI"
-            "Tc2_Standard"
-            "Tc2_SUPS"
-            "Tc2_SystemCX"
-            "Tc2_System"
-            "Tc2_SystemC69xx"
-            "Tc2_Utilities"
-            "Tc3_BA_Common"
-            "Tc3_DALI"
-            "Tc3_DynamicMemory"
-            "Tc3_EventLogger"
-            "Tc3_IPCDiag"
-            "Tc3_JsonXml"
-            "Tc3_Module" ]
-    
-        if m.Success then 
-            let libName = m.Groups.[1].Value 
-            let index = 
-                libraryNames 
-                |> List.map (fun x -> x.ToLower()) 
+
+        let libraryNames =
+            [ "Tc2_Coupler"
+              "Tc2_DALI"
+              "Tc2_DataExchange"
+              "Tc2_DMX"
+              "Tc2_EIB"
+              "Tc2_EnOcean"
+              "Tc2_EtherCAT"
+              "Tc2_GENIbus"
+              "Tc2_IoFunctions"
+              "Tc2_LON"
+              "Tc2_Math"
+              "Tc2_MBus"
+              "Tc2_MDP"
+              "Tc3_MPBus"
+              "Tc2_SMI"
+              "Tc2_Standard"
+              "Tc2_SUPS"
+              "Tc2_SystemCX"
+              "Tc2_System"
+              "Tc2_SystemC69xx"
+              "Tc2_Utilities"
+              "Tc3_BA_Common"
+              "Tc3_DALI"
+              "Tc3_DynamicMemory"
+              "Tc3_EventLogger"
+              "Tc3_IPCDiag"
+              "Tc3_JsonXml"
+              "Tc3_Module" ]
+
+        if m.Success then
+            let libName = m.Groups.[1].Value
+            
+            let index =
+                libraryNames
+                |> List.map (fun x -> x.ToLower())
                 |> List.findIndex (fun name -> name = libName)
-            libraryNames[index]
-        else 
+
+            libraryNames.[index]
+        else
             ""
-    
-    let toMarkDownLink (page: Page) = 
+
+    let toMarkDownLink (page: Page) =
         let (Url u) = page.Url
         $"[`{page.Url |> getLibraryName}.{page.Name}`]({u})"
