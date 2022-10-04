@@ -163,6 +163,7 @@ let ``Return empty list if no page is found`` () =
 [<InlineData("assets/3_1_0.html")>]
 [<InlineData("assets/3_1_4024_7.html")>]
 [<InlineData("assets/3_1_4024_11.html")>]
+[<InlineData("assets/3_1_4026_0.html")>]
 let ``With TwinCAT version on page`` (fname) =
     let html =
         File.ReadAllLines("../../../" + fname)
