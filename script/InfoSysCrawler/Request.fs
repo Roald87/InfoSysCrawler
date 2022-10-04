@@ -97,7 +97,11 @@ module Request =
 
     let tryFindTwinCATVersion (html: string) =
         let m =
-            Regex.Match(html, "twincat v([\d\.]+)", RegexOptions.IgnoreCase)
+            Regex.Match(
+                html,
+                "twincat v(?:ersion)?\s{0,2}([\d\.]+)",
+                RegexOptions.IgnoreCase
+            )
 
         match m.Success with
         | true -> m.Groups.[1].Value |> Some
@@ -145,7 +149,9 @@ module Request =
                 for node in folders @ pages do
                     match node with
                     | Folder (id, _) ->
-                        if depth <= 5 then printfn "%s %s" (String.replicate depth " ") id.Name
+                        if depth <= 5 then
+                            printfn "%s %s" (String.replicate depth " ") id.Name
+
                         yield Folder(Id = id, Nodes = traverse (depth + 1) id.Url)
                     | Page (id, _) ->
                         yield
