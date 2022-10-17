@@ -14,12 +14,21 @@
 - Added: [`Tc3_DynamicMemory.FB_DynMem_Manager`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dynamicmemory/8846834443.html?id=273899389167963679)
 - Added: [`Tc3_DynamicMemory.FB_DynMem_Buffer`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dynamicmemory/8844514315.html?id=8241497333647833217)
 
-## Version 3.1.4024.24
+## Version 3.1.4024.32
 
 ### Features
 
 - Added: [`Tc2_Utilities.RealIsNaN`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11506311563.html?id=242917297032427132)
 - Added: [`Tc2_Utilities.RealIsFinite`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11506278283.html?id=1461230831771457831)
+
+## Version 3.1.4024.29
+
+### Features
+
+- Added: [`Tc2_Utilities.E_HashMode`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/12674322571.html?id=1394075611762795497)
+- Added: [`Tc2_Utilities.F_GetClassIdVersioned`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/12674393611.html?id=2848447897774806889)
+- Added: [`Tc2_Utilities.F_GenerateHashValue`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/12674358283.html?id=4370544162846202285)
+- Added: [`Tc2_Utilities.FB_CalcHashValue`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/12674253067.html?id=2119009142677043780)
 
 ## Version 3.1.4024.22
 
@@ -27,11 +36,6 @@
 
 - Added: [`Tc2_System.FB_ResetTaskExceedCounter`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/11107119115.html?id=1948900602695240988)
 - Added: [`Tc2_System.FB_ReadTaskExceedCounter`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/11267603979.html?id=6554750661018839478)
-- Added: [`Tc2_SystemCX.FB_CX70xx_RW_EEPROM`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11009227147.html?id=6115162706063450010)
-- Added: [`Tc2_SystemCX.FB_CX7080_LED_WD`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11282066699.html?id=7675427565773653776)
-- Added: [`Tc2_SystemCX.FB_CX7080_LED_ERR`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11106577163.html?id=7926964141089837001)
-- Added: [`Tc2_SystemCX.FB_CX7000_LED_WD`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11106572811.html?id=8700534653695887465)
-- Added: [`Tc2_SystemCX.FB_CX7000_LED_ERR`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11010087691.html?id=3523059685327517438)
 - Added: [`Tc2_SystemCX.FB_CXReadKBusError`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11107098635.html?id=6360225868475216389)
 - Added: [`Tc2_SystemCX.FB_CXReadKBusCycleUpdateTime`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11107094923.html?id=8135264835800328354)
 
@@ -771,7 +775,6 @@
 - Added: [`Tc2_IoFunctions.FB_GetDPRAMInfoEx`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2217659019.html?id=5695739639898429746)
 - Added: [`Tc2_IoFunctions.FB_GetDPRAMInfo`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59134475.html?id=1957996852211801615)
 - Added: [`Tc2_IoFunctions.FB_NovRamReadWriteEx`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59132939.html?id=8007342586059935937)
-- Added: [`Tc2_IoFunctions.FB_NovRamReadWrite`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59131403.html?id=8526951604785748661)
 - Added: [`Tc2_IoFunctions.IOF_CAN_Layer2Command`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59113227.html?id=9155952391546318983)
 - Added: [`Tc2_IoFunctions.FB_GetUPSStatus`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59184523.html?id=2474773387187865285)
 - Added: [`Tc2_IoFunctions.IOF_LB_ParityCheckWithReset`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59110283.html?id=5041199112424734391)
@@ -964,7 +967,7 @@
 - Added: [`Tc2_SUPS.FB_S_UPS_CX51x0`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_sups/2250113931.html?id=5627610611515898967)
 - Added: [`Tc2_SUPS.FB_S_UPS`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_sups/30498571.html?id=1599096140892917218)
 - Added: [`Tc2_SUPS.FB_S_UPS_CB3011`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_sups/2220095883.html?id=3239293293187063130)
-- Added: [`Tc2_MBus.FB_MBUS_EMH_MIZ`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_mbus/174672267.html?id=3025965226451109759)
+- Added: [`Tc2_DMX.Example: DMX master`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_dmx/530218635.html?id=219690756358281296)
 
 ## Version 3.0.0
 
@@ -1028,3 +1031,9 @@
 ### Features
 
 - Added: [`Tc2_System.F_GetStructMemberAlignment`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/31021579.html?id=243854104101513882)
+
+## Version 2...
+
+### Features
+
+- Added: [`Tc2_IoFunctions.FB_NovRamReadWrite`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59131403.html?id=8526951604785748661)
