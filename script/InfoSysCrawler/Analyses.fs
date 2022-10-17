@@ -77,7 +77,8 @@ module Analyses =
               "Tc3_EventLogger"
               "Tc3_IPCDiag"
               "Tc3_JsonXml"
-              "Tc3_Module" ]
+              "Tc3_Module"
+              "Tc3_Vision" ]
 
         if m.Success then
             let libName = m.Groups.[1].Value.ToLower()
