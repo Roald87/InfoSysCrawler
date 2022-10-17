@@ -80,14 +80,13 @@ module Analyses =
               "Tc3_Module" ]
 
         if m.Success then
-            let libName = m.Groups.[1].Value
-            
-            let index =
-                libraryNames
-                |> List.map (fun x -> x.ToLower())
-                |> List.findIndex (fun name -> name = libName)
+            let libName = m.Groups.[1].Value.ToLower()
 
-            libraryNames.[index]
+            match libraryNames
+                  |> List.tryFindIndex (fun name -> name.ToLower() = libName)
+                with
+            | Some index -> libraryNames.[index]
+            | None -> ""
         else
             ""
 
