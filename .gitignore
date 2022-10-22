@@ -5,5 +5,5 @@ obj/
 .fake
 .ionide
 
-playground.ipynb
 .ipynb_checkpoints/
+*.trx
