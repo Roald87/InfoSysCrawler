@@ -99,7 +99,7 @@ module Request =
         let m =
             Regex.Match(
                 html,
-                "twincat v(?:ersion)?\s{0,2}(\d).(\d)\.?(?:\s{1,2}(?:build|b|>=|>)\s{0,2})?(?<major>\d{1,4})?\.?(?<minor>\d{0,2})?",
+                "twincat v(?:ersion)?\s{0,2}(3).(\d)\.?(?:\s{1,2}(?:build|b|>=|>)\s{0,2})?(?<major>\d{1,4})?\.?(?<minor>\d{0,2})?",
                 RegexOptions.IgnoreCase
             )
 
