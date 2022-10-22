@@ -183,6 +183,7 @@ let ``With TwinCAT version on page`` (fname) =
 [<InlineData("TwinCAT v3.1. > 4024.35", "3.1.4024.35")>]
 [<InlineData("TwinCAT v3.1", "3.1")>] // for example https://infosys.beckhoff.com/content/1033/tcplclib_tc2_system/3622991755.html?id=6591934602709167291
 [<InlineData("TwinCAT v3.1 B4016", "3.1.4016")>] // for example https://infosys.beckhoff.com/content/1033/tcplclib_tc2_sups/2250113931.html?id=5627610611515898967
+[<InlineData("TwinCAT v3.1 B4020.32", "3.1.4020.32")>] // for example https://infosys.beckhoff.com/content/1033/tcplclib_tc2_sups/3716524299.html?id=7162402166301276776
 let ``TwinCAT version with additional characters/text``
     (
         versionString,
