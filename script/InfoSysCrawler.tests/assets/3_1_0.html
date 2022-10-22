@@ -1,22 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html[]><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="baseid" content="42594315" /><meta name="releaseid" content="72057594080522251" /><meta name="topicid" content="42594315" /><link rel="stylesheet" href="../../../assets/css/base/01-bootstrap.min.css" /><link rel="stylesheet" href="../../../assets/css/base/02-jquery-tree.css" /><link rel="stylesheet" href="../../../assets/css/base/03-bootstrap-schema.css" /><link rel="stylesheet" href="../../../assets/css/base/04-jquery.mcustomscrollbar.min.css" /><link rel="stylesheet" href="../../../assets/css/base/05-jquery.mmenu.oncanvas.css" /><link rel="stylesheet" href="../../../assets/css/base/06-jquery.mmenu.schema.css" /><link rel="stylesheet" href="../../../assets/css/formats.css" /><title>FB_ReadCouplerDiag</title><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Language" content="en" /><meta name="date" content="637489440000000000" /><meta name="generator" content="onlineInfoSysConverter" /><meta name="Robots" content="index, follow" /><script src="../../../includes/styles.js" type="text/javascript" language="JavaScript"></script><script src="../../../includes/prettify/prettify.js" type="text/javascript" language="JavaScript"></script><script src="../../../includes/prettify/lang-st.js" type="text/javascript" language="JavaScript"></script><link rel="stylesheet" type="text/css" href="../../../css/prettify/prettify.css" /><meta name="parent" content="42589835" /><meta name="level" content="7" /><meta name="product" content="PLC" /><meta name="category" content="TE1000 XAE" /><meta name="productgroup" content="TwinCAT 3" /><meta name="microsoft_help" content="FB_ReadCouplerDiag" /><meta name="primaryid" content="3826489383443943666" /></head><body id="42594315" lang="en-US" data-node-id="42594315" class="" data-culture="en-US" onload="prettyPrint()"><div class="no-off-canvas"><div id="pushobj"><div class="scroll-container content-container" id="content-container"><div class="container" role="main"><ol class="breadcrumb " style="display:none;"><li><a href="index.html">TwinCAT 3 PLC Lib: Tc2_Coupler</a></li><li><a href="42589835.html">Function blocks</a></li><li>FB_ReadCouplerDiag</li></ol><h1 class="heading" style="color:black;">FB_ReadCouplerDiag</h1><p><img style="vertical-align: baseline;" src="Images/gif/9007199297376907__Web.gif" alt="FB_ReadCouplerDiag 1:" /> </p><p>The FB_ReadCouplerDiag function block allows reading of the first and second flashing sequences of the error LED on the coupler when a terminal bus or coupler error occurs. The data is transferred to the PLC via the 2-byte PLC interface. This, however, only functions if communication over the fieldbus is maintained. It must be possible for the data to be transferred without error from the coupler to the PLC via the fieldbus. In order to detect that a coupler error has occurred, the status byte for the coupler in the PLC can be interrogated cyclically, and the function block activated when an error occurs.</p><div class="textmodule" id="42675339"><h2 class="subheading">VAR_INPUT</h2><pre class="prettyprint lang-st">VAR_INPUT<br />    stState    : PLCINTFSTRUCT;<br />    bExecute   : BOOL;<br />    tTimeout   : TIME;<br />END_VAR</pre><p><strong>stState</strong> : Status word of the 2-byte PLC interface. (<a href="42603275.html">PLCINTFSTRUCT</a>)</p><p><strong>bExecute</strong>: The function block is activated by a positive edge at this input.</p><p><strong>tTimeout</strong>: States the length of the timeout that may not be exceeded during execution of the function.</p></div><div class="textmodule" id="42676875"><h2 class="subheading">VAR_OUTPUT</h2><pre class="prettyprint lang-st">VAR_OUTPUT<br />    stCtrl   : PLCINTFSTRUCT;<br />    bBusy    : BOOL;<br />    bError   : BOOL;<br />    nErrId   : UDINT;<br />    stDiag   : ST_CouplerDiag;<br />END_VAR</pre><p><strong>stCtrl</strong> : Control word of the 2-byte PLC interface. (<a href="42603275.html">PLCINTFSTRUCT</a>)</p><p><strong>bBusy</strong>: This output is set when the block is activated, and remains set until execution of the function has been completed.</p><p><strong>bError</strong>: If an error should occur during the execution of the function, then this output is set, after the bBusy output has been reset.</p><p><strong>nErrId</strong> : Supplies the error number when the bError output is set.</p><table class="table tabletype-header table-fixed"><colgroup><col style="width: 16.0%;"></col><col style="width: 83.9%;"></col></colgroup><thead><tr><th><p class="text-left">Error number</p></th><th><p class="text-left">Error description</p></th></tr></thead><tbody><tr><td><p class="text-left">0</p>
-</td><td><p class="text-left">No error</p>
-</td></tr><tr><td><p class="text-left">0x100</p>
-</td><td><p class="text-left">Error at initialisation of the communication via the 2 byte PLC interface</p>
-</td></tr><tr><td><p class="text-left">0x200</p>
-</td><td><p class="text-left">Error during communication</p>
-</td></tr><tr><td><p class="text-left">0x300</p>
-</td><td><p class="text-left">Timeout-Error. The permitted execution time was exceeded</p>
-</td></tr><tr><td><p class="text-left">0x400</p>
-</td><td><p class="text-left">Wrong parameter value at register number</p>
-</td></tr><tr><td><p class="text-left">0x500</p>
-</td><td><p class="text-left">Wrong parameter value at table number</p>
-</td></tr></tbody></table><p> </p><p><strong>stDiag</strong> : Structure containing the coupler's diagnostic information (error type, and the first and second coupler flashing sequences). (<a href="42606347.html">ST_CouplerDiag</a>)</p></div><div class="textmodule" id="42667147"><h2 class="subheading">Requirements</h2><table class="table tabletype-header table-fixed"><colgroup><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col></colgroup><thead><tr><th>
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html[]><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="baseid" content="31021579" /><meta name="releaseid" content="36028797049985547" /><meta name="topicid" content="31021579" /><link rel="stylesheet" href="../../../assets/css/base/01-bootstrap.min.css" /><link rel="stylesheet" href="../../../assets/css/base/02-jquery-tree.css" /><link rel="stylesheet" href="../../../assets/css/base/03-bootstrap-schema.css" /><link rel="stylesheet" href="../../../assets/css/base/04-jquery.mcustomscrollbar.min.css" /><link rel="stylesheet" href="../../../assets/css/base/05-jquery.mmenu.oncanvas.css" /><link rel="stylesheet" href="../../../assets/css/base/06-jquery.mmenu.schema.css" /><link rel="stylesheet" href="../../../assets/css/formats.css" /><title>F_GetStructMemberAlignment</title><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Language" content="en" /><meta name="date" content="637671744000000000" /><meta name="generator" content="onlineInfoSysConverter" /><meta name="Robots" content="index, follow" /><script src="../../../includes/styles.js" type="text/javascript" language="JavaScript"></script><script src="../../../includes/prettify/prettify.js" type="text/javascript" language="JavaScript"></script><script src="../../../includes/prettify/lang-st.js" type="text/javascript" language="JavaScript"></script><link rel="stylesheet" type="text/css" href="../../../css/prettify/prettify.css" /><meta name="parent" content="4566805771" /><meta name="level" content="8" /><meta name="product" content="PLC" /><meta name="category" content="TE1000 XAE" /><meta name="productgroup" content="TwinCAT 3" /><meta name="microsoft_help" content="F_GetStructMemberAlignment" /><meta name="primaryid" content="243854104101513882" /></head><body id="31021579" lang="en-US" data-node-id="31021579" class="" data-culture="en-US" onload="prettyPrint()"><div class="no-off-canvas"><div id="pushobj"><div class="scroll-container content-container" id="content-container"><div class="container" role="main"><ol class="breadcrumb " style="display:none;"><li><a href="index.html">TwinCAT 3 PLC Lib: Tc2_System</a></li><li><a href="31003403.html">Functions</a></li><li><a href="4566805771.html">General functions</a></li><li>F_GetStructMemberAlignment</li></ol><h1 class="heading" style="color:black;">F_GetStructMemberAlignment</h1><p><img style="vertical-align: baseline;" src="Images/png/9007199286077963__Web.png" alt="F_GetStructMemberAlignment 1:" /> </p><p>The function returns information about used data struct member alignment setting. The alignment is affecting the way data structure elements are arranged in computer memory.</p><div class="textmodule" id="31742475"><h2 class="subheading">FUNCTION F_GetStructMemberAlignment : BYTE</h2><pre class="prettyprint lang-st">VAR_INPUT<br />    (* no input parameter *)<br />END_VAR</pre><table class="table tabletype-header table-fixed"><colgroup><col style="width: 50.0%;"></col><col style="width: 50.0%;"></col></colgroup><thead><tr><th><p class="text-left">Return value</p></th><th><p class="text-left">Description</p></th></tr></thead><tbody><tr><td><p class="text-center">1</p>
+</td><td><p class="text-left">1 byte alignment (e.g. TwinCAT v2.11, x86 target platform)</p>
+</td></tr><tr><td><p class="text-center">2</p>
+</td><td><p class="text-left">2 byte alignment</p>
+</td></tr><tr><td><p class="text-center">4</p>
+</td><td><p class="text-left">4 byte alignment (e.g. TwinCAT v2.11, ARM target platform)</p>
+</td></tr><tr><td><p class="text-center">8</p>
+</td><td><p class="text-left">8 byte alignment</p>
+</td></tr></tbody></table><p>The following examples show the arrangement of the data structure elements in the memory, depending on the memory alignment employed.</p><p>?? := Padding byte</p></div><div class="textmodule" id="715565707"><p><strong>Example 1</strong></p><pre class="prettyprint lang-st">TYPE ST_TEST1<br />STRUCT<br />    ui8 : BYTE := 16#FF;(* FF *)<br />    f64 : LREAL := 1234.5678;(* AD FA 5C 6D 45 4A 93 40 *)<br />END_STRUCT<br />END_TYPE<br /><br />test1 : ST_TEST1;</pre><table class="table tabletype-header table-fixed"><colgroup><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col></colgroup><thead><tr><th><p class="text-left">Alignment</p></th><th><p class="text-left">SIZEOF(test1)</p></th><th><p class="text-center">Memory contents</p></th></tr></thead><tbody><tr><td><p class="text-center">1 byte</p>
+</td><td><p class="text-center">9</p>
+</td><td><p class="text-left">FF AD FA 5C 6D 45 4A 93 40</p>
+</td></tr><tr><td><p class="text-center">2 byte</p>
+</td><td><p class="text-center">10</p>
+</td><td><p class="text-left">FF ?? AD FA 5C 6D 45 4A 93 40</p>
+</td></tr><tr><td><p class="text-center">4 byte</p>
+</td><td><p class="text-center">12</p>
+</td><td><p class="text-left">FF ?? ?? ?? AD FA 5C 6D 45 4A 93 40</p>
+</td></tr><tr><td><p class="text-center">8 byte</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-left">FF ?? ?? ?? ?? ?? ?? ?? AD FA 5C 6D 45 4A 93 40</p>
+</td></tr></tbody></table></div><div class="textmodule" id="715582603"><p><strong>Example 2</strong></p><p>Converting the order of the structure elements changes the arrangement of the padding bytes. These are now added at the end.</p><pre class="prettyprint lang-st">TYPE ST_TEST2<br />STRUCT<br />    f64 : LREAL := 1234.5678;(* AD FA 5C 6D 45 4A 93 40 *)<br />    ui8 : BYTE := 16#FF;(* FF *)<br />END_STRUCT<br />END_TYPE<br /><br />test2 : ST_TEST2;</pre><table class="table tabletype-header table-fixed"><colgroup><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col></colgroup><thead><tr><th><p class="text-left">Alignment</p></th><th><p class="text-left">SIZEOF(test2)</p></th><th><p class="text-center">Memory contents</p></th></tr></thead><tbody><tr><td><p class="text-center">1 byte</p>
+</td><td><p class="text-center">9</p>
+</td><td><p class="text-left">AD FA 5C 6D 45 4A 93 40 FF</p>
+</td></tr><tr><td><p class="text-center">2 byte</p>
+</td><td><p class="text-center">10</p>
+</td><td><p class="text-left">AD FA 5C 6D 45 4A 93 40 FF ??</p>
+</td></tr><tr><td><p class="text-center">4 byte</p>
+</td><td><p class="text-center">12</p>
+</td><td><p class="text-left">AD FA 5C 6D 45 4A 93 40 FF ?? ?? ??</p>
+</td></tr><tr><td><p class="text-center">8 byte</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-left">AD FA 5C 6D 45 4A 93 40 FF ?? ?? ?? ?? ?? ?? ?? ??</p>
+</td></tr></tbody></table></div><div class="textmodule" id="715585803"><p><strong>Example 3</strong></p><p>In the case of 2, 4 and 8 byte alignment, the elements ui32 and f64 are already suitably aligned, so that no padding bytes need to be added.</p><pre class="prettyprint lang-st">TYPE ST_TEST3<br />STRUCT<br />    ui8  : BYTE := 16#FF;(* FF *)<br />    ui16 : WORD := 16#1234;(* 34 12 *)<br />    ui32 : DWORD := 16#AABBCCDD;(* DD CC BB AA *)<br />    f64  : LREAL := 1234.5678;(* AD FA 5C 6D 45 4A 93 40 *)<br />END_STRUCT<br />END_TYPE<br /><br />test3 : ST_TEST3;</pre><table class="table tabletype-header table-fixed"><colgroup><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col></colgroup><thead><tr><th><p class="text-left">Alignment</p></th><th><p class="text-left">SIZEOF(test3)</p></th><th><p class="text-center">Memory contents</p></th></tr></thead><tbody><tr><td><p class="text-center">1 byte</p>
+</td><td><p class="text-center">15</p>
+</td><td><p class="text-left">FF 34 12 DD CC BB AA AD FA 5C 6D 45 4A 93 40</p>
+</td></tr><tr><td><p class="text-center">2 byte</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-left">FF ?? 34 12 DD CC BB AA AD FA 5C 6D 45 4A 93 40</p>
+</td></tr><tr><td><p class="text-center">4 byte</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-left">FF ?? 34 12 DD CC BB AA AD FA 5C 6D 45 4A 93 40</p>
+</td></tr><tr><td><p class="text-center">8 byte</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-left">FF ?? 34 12 DD CC BB AA AD FA 5C 6D 45 4A 93 40</p>
+</td></tr></tbody></table></div><div class="textmodule" id="715589003"><p><strong>Example 4</strong></p><pre class="prettyprint lang-st">TYPE ST_A1<br />STRUCT<br />    ui8  : BYTE := 16#FF;(* FF *)<br />    ui32 : DWORD := 16#AABBCCDD;(* DD CC BB AA *)<br />    rsv  : BYTE := 16#EE;(* EE *)<br />END_STRUCT<br />END_TYPE<br /><br />TYPE ST_A2<br />STRUCT<br />    ui16 : WORD := 16#1234;(* 34 12 *)<br />    ui8  : BYTE := 16#55;(* 55 *)<br />END_STRUCT<br />END_TYPE<br /><br />TYPE ST_TEST4<br />STRUCT<br />    a1 : ST_A1;<br />    a2 : ST_A2;<br />END_STRUCT<br />END_TYPE<br /><br />test4 : ST_TEST4;</pre><table class="table tabletype-header table-fixed"><colgroup><col style="width: 16.6%;"></col><col style="width: 16.6%;"></col><col style="width: 16.6%;"></col><col style="width: 16.6%;"></col><col style="width: 16.6%;"></col><col style="width: 16.6%;"></col></colgroup><thead><tr><th><p class="text-left">Alignment</p></th><th><p class="text-left">SIZEOF(test4)</p></th><th><p class="text-left">SIZEOF(test4.a1)</p></th><th><p class="text-left">a1/a2 padding bytes</p></th><th><p class="text-left">SIZEOF(test4.a2)</p></th><th><p class="text-center">Memory contents</p></th></tr></thead><tbody><tr><td><p class="text-center">1 byte</p>
+</td><td><p class="text-center">9</p>
+</td><td><p class="text-center">6</p>
+</td><td><p class="text-center">-</p>
+</td><td><p class="text-center">3</p>
+</td><td><p class="text-left">FF DD CC BB AA EE 34 12 55</p>
+</td></tr><tr><td><p class="text-center">2 byte</p>
+</td><td><p class="text-center">12</p>
+</td><td><p class="text-center">8</p>
+</td><td><p class="text-center">-</p>
+</td><td><p class="text-center">4</p>
+</td><td><p class="text-left">FF ?? DD CC BB AA EE ?? 34 12 55 ??</p>
+</td></tr><tr><td><p class="text-center">4 byte</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-center">12</p>
+</td><td><p class="text-center">-</p>
+</td><td><p class="text-center">4</p>
+</td><td><p class="text-left">FF ?? ?? ?? DD CC BB AA EE ?? ?? ?? 34 12 55 ??</p>
+</td></tr><tr><td><p class="text-center">8 byte</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-center">12</p>
+</td><td><p class="text-center">-</p>
+</td><td><p class="text-center">4</p>
+</td><td><p class="text-left">FF ?? ?? ?? DD CC BB AA EE ?? ?? ?? 34 12 55 ??</p>
+</td></tr></tbody></table></div><div class="textmodule" id="715592203"><p><strong>Example 5</strong></p><pre class="prettyprint lang-st">TYPE ST_D1<br />STRUCT<br />    ui16 : WORD := 16#1234;(* 34 12 *)<br />    ui8 : BYTE := 16#55;(* 55 *)<br />END_STRUCT<br />END_TYPE<br /><br />TYPE ST_D2<br />STRUCT<br />    ui8 : BYTE := 16#FF;(* FF *)<br />    f64 : LREAL := 1234.5678;(* AD FA 5C 6D 45 4A 93 40 *)<br />    rsv : BYTE := 16#EE;(* EE *)<br />END_STRUCT<br />END_TYPE<br /><br />TYPE ST_TEST5<br />STRUCT<br />    d1 : ST_D1;<br />    d2 : ST_D2;<br />END_STRUCT<br />END_TYPE<br /><br />test5 : ST_TEST5;</pre><table class="table tabletype-header table-fixed"><colgroup><col style="width: 12.5%;"></col><col style="width: 17.8%;"></col><col style="width: 19.6%;"></col><col style="width: 16.6%;"></col><col style="width: 16.6%;"></col><col style="width: 16.6%;"></col></colgroup><thead><tr><th><p class="text-left">Alignment</p></th><th><p class="text-left">SIZEOF(test5)</p></th><th><p class="text-left">SIZEOF(test5.d1)</p></th><th><p class="text-left">d1/d2 padding bytes</p></th><th><p class="text-left">SIZEOF(test5.d2)</p></th><th><p class="text-center">Memory contents</p></th></tr></thead><tbody><tr><td><p class="text-center">1 byte</p>
+</td><td><p class="text-center">13</p>
+</td><td><p class="text-center">3</p>
+</td><td><p class="text-center">-</p>
+</td><td><p class="text-center">10</p>
+</td><td><p class="text-left">34 12 55 FF AD FA 5C 6D 45 4A 93 40 EE</p>
+</td></tr><tr><td><p class="text-center">2 byte</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-center">4</p>
+</td><td><p class="text-center">-</p>
+</td><td><p class="text-center">12</p>
+</td><td><p class="text-left">34 12 55 ?? FF ?? AD FA 5C 6D 45 4A 93 40 EE ??</p>
+</td></tr><tr><td><p class="text-center">4 byte</p>
+</td><td><p class="text-center">20</p>
+</td><td><p class="text-center">4</p>
+</td><td><p class="text-center">-</p>
+</td><td><p class="text-center">16</p>
+</td><td><p class="text-left">34 12 55 ?? FF ?? ?? ?? AD FA 5C 6D 45 4A 93 40 EE ?? ?? ??</p>
+</td></tr><tr><td><p class="text-center">8 byte</p>
+</td><td><p class="text-center">32</p>
+</td><td><p class="text-center">4</p>
+</td><td><p class="text-center">4</p>
+</td><td><p class="text-center">24</p>
+</td><td><p class="text-left">34 12 55 ?? ?? ?? ?? ?? FF ?? ?? ?? ?? ?? ?? ?? AD FA 5C 6D 45 4A 93 40 EE ?? ?? ?? ?? ?? ?? ??</p>
+</td></tr></tbody></table></div><div class="textmodule" id="31459851"><h2 class="subheading">Requirements</h2><table class="table tabletype-header table-fixed"><colgroup><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col><col style="width: 33.3%;"></col></colgroup><thead><tr><th>
 <p class="text-left">Development environment</p></th><th>
 <p class="text-left">Target system type</p></th><th>
-<p class="text-left">PLC libraries to include (category group)</p></th></tr></thead><tbody><tr><td>
+<p class="text-left">PLC libraries to include (Category group)</p></th></tr></thead><tbody><tr><td>
 <p class="text-left">TwinCAT v3.1.0</p>
 </td><td>
 <p class="text-left">PC or CX (x86, x64, ARM)</p>
 </td><td>
-<p class="text-left">Tc2_Coupler (IO)</p>
-</td></tr></tbody></table></div></div><div class="container"><footer><p class="text-muted">© 2021 Beckhoff Automation</p></footer></div></div><div class="beckhoff-runninghead" id="navbar" role="navigation"><a class="beckhoff-runninghead-brand" href="index.html">TwinCAT 3 | PLC Library: Tc2_Coupler</a></div></div></div><script src="../../../assets/js/00-jquery.min.js"></script><script src="../../../assets/js/05-jquery.mcustomscrollbar.min.js"></script><script src="../../../assets/js/06-jquery-scrollbars.min.js"></script><script src="../../../assets/js/jquery.mousewheel.min.js"></script></body></html>
+<p class="text-left">Tc2_System (System)</p>
+</td></tr></tbody></table></div></div><div class="container"><footer><p class="text-muted">© 2021 Beckhoff Automation</p></footer></div></div><div class="beckhoff-runninghead" id="navbar" role="navigation"><a class="beckhoff-runninghead-brand" href="index.html">TwinCAT 3 | PLC Library: Tc2_System</a></div></div></div><script src="../../../assets/js/00-jquery.min.js"></script><script src="../../../assets/js/05-jquery.mcustomscrollbar.min.js"></script><script src="../../../assets/js/06-jquery-scrollbars.min.js"></script><script src="../../../assets/js/jquery.mousewheel.min.js"></script></body></html>
