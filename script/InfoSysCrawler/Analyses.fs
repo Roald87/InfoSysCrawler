@@ -1,5 +1,6 @@
 namespace InfoSysCrawler
 
+open System.IO
 open System.Text.RegularExpressions
 
 open SiteMap
@@ -94,3 +95,15 @@ module Analyses =
     let toMarkDownLink (page: Page) =
         let (Url u) = page.Url
         $"[`{page.Url |> getLibraryName}.{page.Name}`]({u})"
+
+    let saveAsMarkdown (filename: string) nodes =
+        let changelog = 
+            nodes
+            |> getPages
+            |> groupByVersionNumber
+            |> List.map (fun (version, pages) -> 
+                [$"\n## Version {version}\n\n### Features\n"] 
+                @ (pages |> List.map (fun page -> $"- Added: {page |> toMarkDownLink}")))
+            |> List.concat
+
+        File.WriteAllLines(filename, changelog)
