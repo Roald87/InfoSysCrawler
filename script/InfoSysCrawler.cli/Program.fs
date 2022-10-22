@@ -8,11 +8,13 @@ type CliError = | ArgumentsNotSpecified
 
 type Arguments =
     | Path of path: string
+    | Json of path: string
 
     interface IArgParserTemplate with
         member this.Usage =
             match this with
             | Path _ -> "Crawl the InfoSys url recusively"
+            | Json _ -> "Json filename to save the crawl results into"
 
 let getExitCode result =
     match result with
@@ -21,7 +23,7 @@ let getExitCode result =
         match err with
         | ArgumentsNotSpecified -> 1
 
-let runCrawler path =
+let runCrawler path filename =
     // Add folder names you do not want to into
     let ignoreFolders =
         [ "Foreword"
@@ -29,11 +31,11 @@ let runCrawler path =
           "Samples" ]
     // Add pages which you do not want to look for a twincat version number
     let ignorePages = [ "Overview"; "Search" ]
-    // Start crawling
-    printfn "%s" path
 
     let menu =
         traverseMenu ignoreFolders ignorePages (Url path)
+
+    saveAsJson filename menu 
 
     Ok()
 
@@ -55,7 +57,7 @@ let main argv =
         )
 
     match parser.ParseCommandLine argv with
-    | p when p.Contains(Path) -> runCrawler (p.GetResult(Path))
+    | p when p.Contains(Path) -> runCrawler (p.GetResult Path) (p.GetResult Json)
     | _ ->
         printfn "%s" (parser.PrintUsage())
         Error ArgumentsNotSpecified
