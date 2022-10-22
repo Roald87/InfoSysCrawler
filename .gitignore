@@ -6,3 +6,4 @@ obj/
 .ionide
 
 .ipynb_checkpoints/
+*.trx
