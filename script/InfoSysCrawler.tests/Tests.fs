@@ -179,6 +179,8 @@ let ``With TwinCAT version on page`` (fname) =
 
 [<Theory>]
 [<InlineData("TwinCAT v3.1 Build 4022.30", "3.1.4022.30")>]
+[<InlineData("TwinCAT v3.1. >= 4022.31", "3.1.4022.31")>]
+[<InlineData("TwinCAT v3.1. > 4024.35", "3.1.4024.35")>]
 let ``TwinCAT version with additional characters/text``
     (
         versionString,
