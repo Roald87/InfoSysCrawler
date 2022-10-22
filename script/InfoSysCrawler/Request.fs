@@ -99,12 +99,20 @@ module Request =
         let m =
             Regex.Match(
                 html,
-                "twincat v(?:ersion)?\s{0,2}([\d\.]+)",
+                "twincat v(?:ersion)?\s{0,2}(\d).(\d)\.?(?:\s+build\s+)?(?<major>\d{1,4})\.?(?<minor>\d{0,2})?",
                 RegexOptions.IgnoreCase
             )
 
+        let notEmptyString (str: string) = str.Length > 0
+
         match m.Success with
-        | true -> m.Groups.[1].Value |> Some
+        | true ->
+            m.Groups
+            |> Seq.tail
+            |> Seq.map (fun g -> g.Value)
+            |> Seq.filter notEmptyString
+            |> String.concat "."
+            |> Some
         | false -> None
 
     let tryGetTwinCatVersion = getAsync >> tryFindTwinCATVersion

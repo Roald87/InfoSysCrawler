@@ -178,6 +178,17 @@ let ``With TwinCAT version on page`` (fname) =
     |> should equal (Some tcversion)
 
 [<Theory>]
+[<InlineData("TwinCAT v3.1 Build 4022.30", "3.1.4022.30")>]
+let ``TwinCAT version with additional characters/text``
+    (
+        versionString,
+        expectedVersion
+    ) =
+
+    tryFindTwinCATVersion versionString
+    |> should equal (Some expectedVersion)
+
+[<Theory>]
 [<InlineData("assets/no_tc_version.html")>]
 [<InlineData("assets/no_tc_version_with_library_version.html")>]
 let ``No TwinCAT version on page`` (fname) =
