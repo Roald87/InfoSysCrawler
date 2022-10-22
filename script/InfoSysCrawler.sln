@@ -7,7 +7,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InfoSysCrawler", "InfoSysCr
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InfoSysCrawler.tests", "InfoSysCrawler.tests\InfoSysCrawler.tests.fsproj", "{698E9EA7-091F-4373-B6AF-D3FB6B65CE97}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InfoSysCrawler.Cli", "InfoSysCrawler.Cli\InfoSysCrawler.Cli.fsproj", "{A2859F8A-9865-44B0-8402-E15539972650}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InfoSysCrawler.cli", "InfoSysCrawler.cli\InfoSysCrawler.cli.fsproj", "{A2859F8A-9865-44B0-8402-E15539972650}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

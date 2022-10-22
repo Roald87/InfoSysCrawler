@@ -14,31 +14,6 @@
 - Added: [`Tc3_DynamicMemory.FB_DynMem_Manager`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dynamicmemory/8846834443.html?id=273899389167963679)
 - Added: [`Tc3_DynamicMemory.FB_DynMem_Buffer`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dynamicmemory/8844514315.html?id=8241497333647833217)
 
-## Version 3.1.4024.32
-
-### Features
-
-- Added: [`Tc2_Utilities.RealIsNaN`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11506311563.html?id=242917297032427132)
-- Added: [`Tc2_Utilities.RealIsFinite`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/11506278283.html?id=1461230831771457831)
-
-## Version 3.1.4024.29
-
-### Features
-
-- Added: [`Tc2_Utilities.E_HashMode`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/12674322571.html?id=1394075611762795497)
-- Added: [`Tc2_Utilities.F_GetClassIdVersioned`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/12674393611.html?id=2848447897774806889)
-- Added: [`Tc2_Utilities.F_GenerateHashValue`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/12674358283.html?id=4370544162846202285)
-- Added: [`Tc2_Utilities.FB_CalcHashValue`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/12674253067.html?id=2119009142677043780)
-
-## Version 3.1.4024.22
-
-### Features
-
-- Added: [`Tc2_System.FB_ResetTaskExceedCounter`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/11107119115.html?id=1948900602695240988)
-- Added: [`Tc2_System.FB_ReadTaskExceedCounter`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/11267603979.html?id=6554750661018839478)
-- Added: [`Tc2_SystemCX.FB_CXReadKBusError`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11107098635.html?id=6360225868475216389)
-- Added: [`Tc2_SystemCX.FB_CXReadKBusCycleUpdateTime`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11107094923.html?id=8135264835800328354)
-
 ## Version 3.1.4024.17
 
 ### Features
@@ -775,6 +750,7 @@
 - Added: [`Tc2_IoFunctions.FB_GetDPRAMInfoEx`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2217659019.html?id=5695739639898429746)
 - Added: [`Tc2_IoFunctions.FB_GetDPRAMInfo`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59134475.html?id=1957996852211801615)
 - Added: [`Tc2_IoFunctions.FB_NovRamReadWriteEx`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59132939.html?id=8007342586059935937)
+- Added: [`Tc2_IoFunctions.FB_NovRamReadWrite`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59131403.html?id=8526951604785748661)
 - Added: [`Tc2_IoFunctions.IOF_CAN_Layer2Command`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59113227.html?id=9155952391546318983)
 - Added: [`Tc2_IoFunctions.FB_GetUPSStatus`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59184523.html?id=2474773387187865285)
 - Added: [`Tc2_IoFunctions.IOF_LB_ParityCheckWithReset`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59110283.html?id=5041199112424734391)
@@ -1032,8 +1008,105 @@
 
 - Added: [`Tc2_System.F_GetStructMemberAlignment`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/31021579.html?id=243854104101513882)
 
-## Version 2...
+## Version 3.1.4022.0
 
 ### Features
 
-- Added: [`Tc2_IoFunctions.FB_NovRamReadWrite`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/59131403.html?id=8526951604785748661)
+- Added: [`Tc2_System.FB_FileLoad`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/7083988875.html?id=5357302780541448503)
+
+## Version 3.1.4024.22
+
+### Features
+
+- Added: [`Tc2_System.FB_ResetTaskExceedCounter`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/11107119115.html?id=1948900602695240988)
+- Added: [`Tc2_System.FB_ReadTaskExceedCounter`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/11267603979.html?id=6554750661018839478)
+- Added: [`Tc2_SystemCX.FB_CX70xx_RW_EEPROM`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11009227147.html?id=6115162706063450010)
+- Added: [`Tc2_SystemCX.FB_CX7080_LED_WD`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11282066699.html?id=7675427565773653776)
+- Added: [`Tc2_SystemCX.FB_CX7080_LED_ERR`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11106577163.html?id=7926964141089837001)
+- Added: [`Tc2_SystemCX.FB_CX7000_LED_WD`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11106572811.html?id=8700534653695887465)
+- Added: [`Tc2_SystemCX.FB_CX7000_LED_ERR`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11010087691.html?id=3523059685327517438)
+- Added: [`Tc2_SystemCX.FB_CXReadKBusError`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11107098635.html?id=6360225868475216389)
+- Added: [`Tc2_SystemCX.FB_CXReadKBusCycleUpdateTime`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11107094923.html?id=8135264835800328354)
+
+## Version 3.1.4022.29
+
+### Features
+
+- Added: [`Tc2_System.FB_IecCriticalSection`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/2326017163.html?id=3047524173527813729)
+
+## Version 3.1.4013
+
+### Features
+
+- Added: [`Tc2_MDP.FB_MDP_ReadIndex`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_mdp/178718603.html?id=1682933375785172630)
+
+## Version 3.1.4018.26
+
+### Features
+
+- Added: [`Tc2_IoFunctions.ST_KL3228OutData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2089267979.html?id=5656335580876414190)
+- Added: [`Tc2_IoFunctions.ST_KL3228InData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2089238283.html?id=713835624597037823)
+- Added: [`Tc2_IoFunctions.ST_KL3208OutData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2089076235.html?id=4857640062192595820)
+- Added: [`Tc2_IoFunctions.ST_KL3208InData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2089074315.html?id=8605529518157709704)
+- Added: [`Tc2_IoFunctions.ST_KL320xOutData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2088746123.html?id=8512988496742093284)
+- Added: [`Tc2_IoFunctions.ST_KL320xInData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2088742027.html?id=1032412485831878947)
+- Added: [`Tc2_IoFunctions.ST_KL27x1OutData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2086569483.html?id=5839773933410659770)
+- Added: [`Tc2_IoFunctions.ST_KL27x1InData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2086383115.html?id=8894321869386542373)
+- Added: [`Tc2_IoFunctions.ST_KL1501OutData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2085793931.html?id=6048066777263751203)
+- Added: [`Tc2_IoFunctions.ST_KL1501InData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2085789835.html?id=2837453486903490695)
+- Added: [`Tc2_IoFunctions.FB_KL3228Config`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2084386699.html?id=1430169788192964615)
+- Added: [`Tc2_IoFunctions.FB_KL3208Config`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2084384779.html?id=744984473151509137)
+- Added: [`Tc2_IoFunctions.FB_KL320xConfig`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2084382859.html?id=166311612032330740)
+- Added: [`Tc2_IoFunctions.FB_KL27x1Config`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2084380939.html?id=166107339342627340)
+- Added: [`Tc2_IoFunctions.FB_KL1501Config`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/2084379019.html?id=5228753612861554565)
+
+## Version 3.1.
+
+### Features
+
+- Added: [`Tc2_IoFunctions.FB_TcTouchLock_AcquireFocus`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_iofunctions/6811367563.html?id=3366609942436337282)
+
+## Version 3.1.4020.14
+
+### Features
+
+- Added: [`Tc2_EnOcean.STREnOceanTurnSwitch`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173325451.html?id=8344751103332958602)
+- Added: [`Tc2_EnOcean.str_Teach_In`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173323915.html?id=1645475926228910640)
+- Added: [`Tc2_EnOcean.str_KL6581`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173322379.html?id=1849350874114595867)
+- Added: [`Tc2_EnOcean.str_EnOceanSwitch`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173320843.html?id=967133331712998084)
+- Added: [`Tc2_EnOcean.ar_EnOceanWindow`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173316235.html?id=4497504061131638061)
+- Added: [`Tc2_EnOcean.KL6581_Output`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173314699.html?id=8314498764829653227)
+- Added: [`Tc2_EnOcean.KL6581_INPUT`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173313163.html?id=476066818838415942)
+- Added: [`Tc2_EnOcean.E_KL6581_Err`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173319307.html?id=2177669722732776314)
+- Added: [`Tc2_EnOcean.E_ENOCEAN_ORG`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173317771.html?id=4340887063652098337)
+- Added: [`Tc2_EnOcean.ST_EnOceanOutData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173303947.html?id=4377393554685815497)
+- Added: [`Tc2_EnOcean.ST_EnOceanInData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173302411.html?id=405068264313064699)
+- Added: [`Tc2_EnOcean.ST_EnOceanReceivedData`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173308555.html?id=7540305275148465981)
+- Added: [`Tc2_EnOcean.E_EnOceanRotarySwitch`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173305483.html?id=4944000783206766326)
+- Added: [`Tc2_EnOcean.E_EnOceanSensorType`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173307019.html?id=7211802311611651249)
+- Added: [`Tc2_EnOcean.FB_KL6581`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173271691.html?id=2018704066526963358)
+- Added: [`Tc2_EnOcean.F_Byte_to_TurnSwitch`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173296267.html?id=1037290777254805412)
+- Added: [`Tc2_EnOcean.F_Byte_to_Temp : REAL`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173294731.html?id=1737968386670885878)
+- Added: [`Tc2_EnOcean.FB_Rec_Teach_In`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173291659.html?id=3977267665892819984)
+- Added: [`Tc2_EnOcean.FB_EnOcean_Search`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173290123.html?id=7040304177183103980)
+- Added: [`Tc2_EnOcean.FB_Send_RPS_SwitchAuto`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173287051.html?id=1270903652977417213)
+- Added: [`Tc2_EnOcean.FB_Send_RPS_Switch`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173285515.html?id=351705534079193646)
+- Added: [`Tc2_EnOcean.FB_Send_4BS`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173283979.html?id=4782298309082697193)
+- Added: [`Tc2_EnOcean.FB_Send_Generic`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173282443.html?id=647830454839166271)
+- Added: [`Tc2_EnOcean.FB_Rec_RPS_Window_Handle`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173279371.html?id=4686396558067360307)
+- Added: [`Tc2_EnOcean.FB_Rec_RPS_Switch`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173277835.html?id=392505539603118572)
+- Added: [`Tc2_EnOcean.FB_Rec_1BS`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173276299.html?id=7378271872182580324)
+- Added: [`Tc2_EnOcean.FB_Rec_Generic`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173274763.html?id=6797398776960182165)
+- Added: [`Tc2_EnOcean.FB_EnOceanReceive`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173259531.html?id=1369144730198496585)
+- Added: [`Tc2_EnOcean.FB_EnOceanSTM250`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173268747.html?id=8297698902080423397)
+- Added: [`Tc2_EnOcean.FB_EnOceanSTM100Generic`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173267211.html?id=7118851703692596416)
+- Added: [`Tc2_EnOcean.FB_EnOceanSTM100`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173265675.html?id=4218480928603569422)
+- Added: [`Tc2_EnOcean.FB_EnOceanPTM200`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173264139.html?id=7967709273063239379)
+- Added: [`Tc2_EnOcean.FB_EnOceanPTM100`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/173262603.html?id=8645358322841840689)
+
+## Version 3.1.4020.32
+
+### Features
+
+- Added: [`Tc2_EnOcean.STR_Teach`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/3266759563.html?id=3118338756872132117)
+- Added: [`Tc2_EnOcean.FB_Rec_Teach_In_Ex`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_enocean/3265337739.html?id=1791501473281069457)
