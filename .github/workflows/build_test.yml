@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore script/InfoSysCrawler.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build script/InfoSysCrawler.sln --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test script/InfoSysCrawler.sln --no-build --verbosity normal
