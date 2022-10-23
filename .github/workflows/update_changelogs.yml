@@ -23,4 +23,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore script/InfoSysCrawler.sln
     - name: Crawl infosys
-      run: dotnet run --project script/InfoSysCrawler.cli/InfoSysCrawler.cli.fsproj --path https://infosys.beckhoff.com/english/menu/menu.php?id=8644252870837316006 --markdown script/changelog_tc1xxx.md  
+      run: |
+        dotnet run --project script/InfoSysCrawler.cli/InfoSysCrawler.cli.fsproj --path https://infosys.beckhoff.com/english/menu/menu.php?id=8644252870837316006 --markdown script/changelog_tc1xxx.md
+        dotnet run --project script/InfoSysCrawler.cli/InfoSysCrawler.cli.fsproj --path https://infosys.beckhoff.com/english/menu/menu.php?id=8063276869205618704 --markdown script/changelog_plc_libraries.md
+        git diff script/changelog_plc_libraries.md
