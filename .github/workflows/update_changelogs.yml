@@ -27,5 +27,7 @@ jobs:
       run: |
         dotnet run --project script/InfoSysCrawler.cli/InfoSysCrawler.cli.fsproj --path https://infosys.beckhoff.com/english/menu/menu.php?id=8644252870837316006 --markdown script/changelog_tc1xxx.md
         dotnet run --project script/InfoSysCrawler.cli/InfoSysCrawler.cli.fsproj --path https://infosys.beckhoff.com/english/menu/menu.php?id=8063276869205618704 --markdown script/changelog_plc_libraries.md
+        dotnet run --project script/InfoSysCrawler.cli/InfoSysCrawler.cli.fsproj --path https://infosys.beckhoff.com/english/menu/menu.php?id=4362125870657286805 --markdown script/changelog_tfxxxx.md 
+        dotnet run --project script/InfoSysCrawler.cli/InfoSysCrawler.cli.fsproj --path https://infosys.beckhoff.com/english/menu/menu.php?id=6455946414529289984 --markdown script/changelog_texxxx.md
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
