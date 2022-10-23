@@ -1,7 +1,7 @@
 # This workflow will crawl InfoSys and look for version numbers on pages.
 # It will save them in a mark down file and create a pull request
 
-name: Crawl infosys
+name: Crawl InfoSys
 
 on:
   push:
