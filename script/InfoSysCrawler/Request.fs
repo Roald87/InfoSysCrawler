@@ -46,12 +46,13 @@ module Request =
             "<a name.*=\"(menu.php\?id=.*)\"><img.*\">(.*)<\/a>.*<br \/>"
 
         matchGroups html folderPattern
-        |> Seq.map (fun g ->
-            let id =
-                { Url = (g.[1].Value |> toValidMenuUrl)
-                  Name = g.[2].Value }
+        |> Seq.map
+            (fun g ->
+                let id =
+                    { Url = (g.[1].Value |> toValidMenuUrl)
+                      Name = g.[2].Value }
 
-            g.[0].Value |> getDepth, Folder(Id = id, Nodes = []))
+                g.[0].Value |> getDepth, Folder(Id = id, Nodes = []))
         |> Seq.toList
 
     let findNodeOfDepth (f: string -> list<int * Node>) (depth: int) (html: string) =
@@ -64,13 +65,14 @@ module Request =
 
     let filterIgnoredPages ignoredPages (nodes: Node list) =
         nodes
-        |> List.map (fun node ->
-            let id = node |> getId
+        |> List.map
+            (fun node ->
+                let id = node |> getId
 
-            if (ignoredPages |> List.contains id.Name) then
-                IgnoredPage id
-            else
-                Page(id, None))
+                if (ignoredPages |> List.contains id.Name) then
+                    IgnoredPage id
+                else
+                    Page(id, None))
 
     let toValidUrl (url: string) =
         if url.StartsWith("http") then
@@ -85,12 +87,13 @@ module Request =
             "<a name.*href=\"(.*)\" target=\"main\">.*>(.*)<\/a><\/span><br \/>"
 
         matchGroups html pagePattern
-        |> Seq.map (fun g ->
-            let id =
-                { Url = (g.[1].Value |> toValidUrl)
-                  Name = g.[2].Value }
+        |> Seq.map
+            (fun g ->
+                let id =
+                    { Url = (g.[1].Value |> toValidUrl)
+                      Name = g.[2].Value }
 
-            g.[0].Value |> getDepth, Page(Id = id, TwinCatVersion = None))
+                g.[0].Value |> getDepth, Page(Id = id, TwinCatVersion = None))
         |> Seq.toList
 
     let findPagesOfDepth = findNodeOfDepth findPages
@@ -131,13 +134,14 @@ module Request =
 
     let filterIgnoredFolders ignoredFolders (nodes: Node list) =
         nodes
-        |> List.map (fun node ->
-            let id = node |> getId
+        |> List.map
+            (fun node ->
+                let id = node |> getId
 
-            if (ignoredFolders |> List.contains id.Name) then
-                IgnoredFolder id
-            else
-                Folder(id, []))
+                if (ignoredFolders |> List.contains id.Name) then
+                    IgnoredFolder id
+                else
+                    Folder(id, []))
 
     let traverseMenu ignoreFolders ignorePages (start: Url) =
         let rec traverse depth (url: Url) : list<Node> =
@@ -175,4 +179,3 @@ module Request =
     let saveAsJson (fname: string) nodes =
         let json = Json.serialize nodes
         File.WriteAllText(fname, json)
-

@@ -247,8 +247,8 @@ let ``crawl menu ignore Overview page`` () =
               Id =
                   { Name = "Overview"
                     Url =
-                      Url
-                          "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42582795.html?id=7734414512993082394" }
+                        Url
+                            "https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_coupler/42582795.html?id=7734414512993082394" }
           ) ]
 
     let actual =
@@ -266,8 +266,8 @@ let ``convert page to markdown link`` () =
     let p =
         { Name = "FB_IPCDiag_Register"
           Url =
-            (Url
-                "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_ipcdiag/1475282443.html?id=3808476523660178266")
+              (Url
+                  "https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_ipcdiag/1475282443.html?id=3808476523660178266")
           TwinCatVersion = "3.1.4024.7" }
 
     let actual = toMarkDownLink p

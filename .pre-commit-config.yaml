@@ -1,0 +1,16 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+-   repo: local
+    hooks:
+    -   id: Format F# with Fantomas
+        name: Format F# with Fantomas
+        language: system
+        entry: /home/roald/.dotnet/tools/fantomas
+        files: \.(fs|fsi|fsx|ml|mli)$
