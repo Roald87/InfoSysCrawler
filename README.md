@@ -8,7 +8,7 @@ The crawler goes through the InfoSys menu and finds all subfolders and pages. It
 
 ### Current application
 
-This crawler can be used to walk through InfoSys pages and look for a TwinCAT version number. The version number is often found on the bottom of a page, as shown below. 
+This crawler can be used to walk through InfoSys pages and look for a TwinCAT version number. The version number is often found on the bottom of a page, as shown below.
 
 ![](img/tc_version.png)
 
@@ -60,6 +60,6 @@ The version numbers are used for the [unofficial TwinCAT changelog](https://tcch
 In `data/` you will find a few folders which are crawled and saved as a json file. Currently the following folders were crawled where the folders "Foreword", "Installation" and "Samples" and the pages "Overview" and "Search" are ignored. On ignored pages/folders the crawler doesn't try to find a TwinCAT version number. Data was last updated on 8 October 2022.
 
 - `data/plc_libraries.json`: TwinCAT 3/TE1000 XAE/PLC/PLC Libraries
-- `data/texxxx.json`: TwinCAT 3/TExxxx | TwinCAT 3 Engineering 
+- `data/texxxx.json`: TwinCAT 3/TExxxx | TwinCAT 3 Engineering
 - `data/tc1xxx.json`: TwinCAT 3/TC1xxx | TwinCAT 3 Base
 - `data/tfxxxx.json`: TwinCAT 3/TFxxxx | TwinCAT 3 Functions

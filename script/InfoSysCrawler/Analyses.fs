@@ -29,20 +29,22 @@ module Analyses =
 
     let groupByVersionNumber pages =
         pages
-        |> List.filter (fun page ->
-            match page with
-            | Page (_, tc) -> tc.IsSome
-            | _ -> false)
-        |> List.map (fun page ->
-            match page with
-            | Page (id, tc) ->
-                { Name = id.Name
-                  Url = id.Url
-                  TwinCatVersion = tc.Value }
-            | _ ->
-                { Name = ""
-                  Url = (Url "")
-                  TwinCatVersion = "" })
+        |> List.filter
+            (fun page ->
+                match page with
+                | Page (_, tc) -> tc.IsSome
+                | _ -> false)
+        |> List.map
+            (fun page ->
+                match page with
+                | Page (id, tc) ->
+                    { Name = id.Name
+                      Url = id.Url
+                      TwinCatVersion = tc.Value }
+                | _ ->
+                    { Name = ""
+                      Url = (Url "")
+                      TwinCatVersion = "" })
         |> List.groupBy (fun page -> page.TwinCatVersion)
         |> List.sortByDescending fst
 
@@ -85,8 +87,7 @@ module Analyses =
             let libName = m.Groups.[1].Value.ToLower()
 
             match libraryNames
-                  |> List.tryFindIndex (fun name -> name.ToLower() = libName)
-                with
+                  |> List.tryFindIndex (fun name -> name.ToLower() = libName) with
             | Some index -> libraryNames.[index]
             | None -> ""
         else
@@ -97,13 +98,15 @@ module Analyses =
         $"[`{page.Url |> getLibraryName}.{page.Name}`]({u})"
 
     let saveAsMarkdown (filename: string) nodes =
-        let changelog = 
+        let changelog =
             nodes
             |> getPages
             |> groupByVersionNumber
-            |> List.map (fun (version, pages) -> 
-                [$"\n## Version {version}\n\n### Features\n"] 
-                @ (pages |> List.map (fun page -> $"- Added: {page |> toMarkDownLink}")))
+            |> List.map
+                (fun (version, pages) ->
+                    [ $"\n## Version {version}\n\n### Features\n" ]
+                    @ (pages
+                       |> List.map (fun page -> $"- Added: {page |> toMarkDownLink}")))
             |> List.concat
 
         File.WriteAllLines(filename, changelog)
