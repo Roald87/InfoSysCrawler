@@ -3,6 +3,9 @@
 
 name: Crawl InfoSys
 
+on:
+  workflow_dispatch:
+
 jobs:
   crawl:
 
