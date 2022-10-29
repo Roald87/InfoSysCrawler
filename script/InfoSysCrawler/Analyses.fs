@@ -48,6 +48,13 @@ module Analyses =
         |> List.groupBy (fun page -> page.TwinCatVersion)
         |> List.sortByDescending fst
 
+    let tryFindLibraryName (html: string) : option<string> =
+        let m = Regex.Match(html, "Tc3_\w+")
+
+        match m.Success with
+        | true -> Some m.Groups.[0].Value
+        | false -> None
+
     let getLibraryName (url: Url) =
         let (Url u) = url
         let m = Regex.Match(u, @"tcplclib_(.*)/")

@@ -204,6 +204,26 @@ let ``No TwinCAT version on page`` (fname) =
     tryFindTwinCATVersion html |> should equal None
 
 [<Theory>]
+[<InlineData("assets/3_1_4024_17-Tc3_Vision.html")>]
+[<InlineData("assets/3_1_4024_7-None.html")>]
+[<InlineData("assets/3_1_4024_17-Tc3_EventLogger.html")>]
+[<InlineData("assets/3_1_4024_7-Tc3_McCollisionAvoidance.html")>]
+let ``Get library name from the page`` (fname: string) =
+    let html =
+        File.ReadAllLines("../../../" + fname)
+        |> String.concat ""
+
+    let libraryName =
+        Path.GetFileNameWithoutExtension(fname).Split("-").[1]
+
+    let actual =
+        match libraryName with
+        | "None" -> None
+        | _ -> Some(libraryName)
+
+    tryFindLibraryName html |> should equal actual
+
+[<Theory>]
 [<InlineData(4,
              """<a name="a1852163624443967212"></a><img src="../../images/tree/VL.gif" width="19" height="16" alt="" class="baumIMG" /><img src="../../images/tree/VL.gif" width="19" height="16" alt="" class="baumIMG" /><img src="../../images/tree/VL.gif" width="19" height="16" alt="" class="baumIMG" /><img src="../../images/tree/VL.gif" width="8" height="16" alt="" class="baumIMG" /><a href="menu.php?id=1852163624443967212&amp;noHl=1&amp;ancRel=1"><img src="../../images/tree/OZ_new.gif" width="14" height="14" alt="" class="baumIMG" /></a> <span class="linkText"><a onclick="javascript:self.location.href='menu.php?id=1852163624443967212&amp;ancRel=1';change_color();" href="../../content/1033/tf50x0_tc3_nc_ptp/index.html?id=1852163624443967212" target="main" class="baum"  id="e1852163624443967212">TF50x0 | NC PTP</a></span><br />""")>]
 [<InlineData(5,
