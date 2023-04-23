@@ -14,6 +14,14 @@
 - Added: [`Tc3_DynamicMemory.FB_DynMem_Manager`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dynamicmemory/8846834443.html?id=273899389167963679)
 - Added: [`Tc3_DynamicMemory.FB_DynMem_Buffer`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc3_dynamicmemory/8844514315.html?id=8241497333647833217)
 
+## Version 3.1.4024.35
+
+### Features
+
+- Added: [`Tc2_System.ADSRDWRTINDEX`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/12872387595.html?id=149302485236724848)
+- Added: [`Tc2_System.ADSWRITEINDEX`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/12872301451.html?id=918284571439567320)
+- Added: [`Tc2_System.ADSREADINDEX`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/12870329099.html?id=6474559297887151831)
+
 ## Version 3.1.4024.32
 
 ### Features
@@ -38,6 +46,7 @@
 - Added: [`Tc2_System.FB_ReadTaskExceedCounter`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/11267603979.html?id=6554750661018839478)
 - Added: [`Tc2_SystemCX.FB_CXReadKBusError`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11107098635.html?id=6360225868475216389)
 - Added: [`Tc2_SystemCX.FB_CXReadKBusCycleUpdateTime`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemcx/11107094923.html?id=8135264835800328354)
+- Added: [`Tc2_EtherCAT.F_EcGetLinkedTaskOfSyncUnit`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/11328546443.html?id=4443004859144058403)
 
 ## Version 3.1.4024.17
 
@@ -158,6 +167,7 @@
 - Added: [`Tc2_Utilities.FB_CheckLicense`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_utilities/4400766091.html?id=5157666698728179333)
 - Added: [`Tc2_System.E_TcMemoryArea`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/4012983947.html?id=388198589678573187)
 - Added: [`Tc2_System.F_CheckMemoryArea`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/4012887435.html?id=1489036489025421628)
+- Added: [`Tc2_System.FB_CreateGUID`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/12964538507.html?id=2018634718454769677)
 
 ## Version 3.1.4020.32
 
@@ -670,6 +680,11 @@
 - Added: [`Tc2_System.FB_FileClose`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30972939.html?id=1997985466515001449)
 - Added: [`Tc2_System.FB_FileOpen`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30977547.html?id=4702287923023522286)
 - Added: [`Tc2_System.FB_EOF`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30971403.html?id=1624015476829386435)
+- Added: [`Tc2_System.ADSRDWRTEX`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30941323.html?id=1144527587528753085)
+- Added: [`Tc2_System.ADSRDWRT`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30869643.html?id=2320621842203604685)
+- Added: [`Tc2_System.ADSWRITE`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30868107.html?id=1102723425013969593)
+- Added: [`Tc2_System.ADSREADEX`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30939787.html?id=3519928155200352058)
+- Added: [`Tc2_System.ADSREAD`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30866571.html?id=5907741325719745777)
 - Added: [`Tc2_System.ADSRDWRTRES`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30953483.html?id=8987476070419037549)
 - Added: [`Tc2_System.ADSWRITERES`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30951947.html?id=3524663419407027687)
 - Added: [`Tc2_System.ADSREADRES`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30950411.html?id=1662378633002109269)
@@ -679,11 +694,6 @@
 - Added: [`Tc2_System.ADSRDDEVINFO`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30938251.html?id=2415220487216832998)
 - Added: [`Tc2_System.ADSWRTCTL`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30936715.html?id=4259785717366623640)
 - Added: [`Tc2_System.ADSRDSTATE`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30935179.html?id=7246198192778696045)
-- Added: [`Tc2_System.ADSRDWRTEX`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30941323.html?id=1144527587528753085)
-- Added: [`Tc2_System.ADSRDWRT`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30869643.html?id=2320621842203604685)
-- Added: [`Tc2_System.ADSWRITE`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30868107.html?id=1102723425013969593)
-- Added: [`Tc2_System.ADSREADEX`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30939787.html?id=3519928155200352058)
-- Added: [`Tc2_System.ADSREAD`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30866571.html?id=5907741325719745777)
 - Added: [`Tc2_System.GETCURTASKINDEX`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30957963.html?id=2338887505708092959)
 - Added: [`Tc2_System.FB_SetLedColor_BAPI`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/4566933899.html?id=2684610655829531814)
 - Added: [`Tc2_System.DRAND`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_system/30956427.html?id=6634697633993752644)
@@ -908,6 +918,8 @@
 - Added: [`Tc2_EtherCAT.FB_EcFoeLoad`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/57041803.html?id=5704611576063541907)
 - Added: [`Tc2_EtherCAT.FB_EcFoeClose`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/57040267.html?id=2518955579643902327)
 - Added: [`Tc2_EtherCAT.FB_EcFoeAccess`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/57038731.html?id=4234199304255238483)
+- Added: [`Tc2_EtherCAT.FB_EcCoeReadBTN`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/11531166731.html?id=8215816323247609255)
+- Added: [`Tc2_EtherCAT.FB_EcCoeReadBIC`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/11531164811.html?id=8059073898942661378)
 - Added: [`Tc2_EtherCAT.FB_CoEWrite_ByDriveRef`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/2217657099.html?id=2701325325255340500)
 - Added: [`Tc2_EtherCAT.FB_CoERead_ByDriveRef`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/2217655179.html?id=3684734861924142283)
 - Added: [`Tc2_EtherCAT.FB_EcCoeSdoWriteEx`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_ethercat/57000843.html?id=587967191719163978)
@@ -984,7 +996,6 @@
 - Added: [`Tc2_SystemC69xx.F_GetVersionTcSystemC69xx`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemc69xx/33448203.html?id=7764496600018324112)
 - Added: [`Tc2_SystemC69xx.FB_C69xxSetWatchdog`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemc69xx/33443851.html?id=708222400761789552)
 - Added: [`Tc2_SystemC69xx.FB_C69xxSetLedColor`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_systemc69xx/33442315.html?id=5245365147276490369)
-- Added: [`Tc2_SUPS.F_GetVersionTcSUPS`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_sups/30502923.html?id=3242701461492151327)
 - Added: [`Tc2_SUPS.FB_NT_QuickShutdown`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_sups/30497035.html?id=6766415496240034724)
 - Added: [`Tc2_Standard.WRIGHT`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_standard/2260779147.html?id=381709618143922899)
 - Added: [`Tc2_Standard.WREPLACE`](https://infosys.beckhoff.com/../content/1033/tcplclib_tc2_standard/2260777227.html?id=3506612230231411214)
